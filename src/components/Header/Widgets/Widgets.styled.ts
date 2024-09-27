@@ -130,6 +130,9 @@ export const WidgetsContainer = styled.div`
           line-height: 18px;
           color: var(--neutral-500);
         }
+        &.no-mb {
+          margin-bottom: 0;
+        }
       }
     }
   }

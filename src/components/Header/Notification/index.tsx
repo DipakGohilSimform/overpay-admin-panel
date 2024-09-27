@@ -63,7 +63,7 @@ export default function Notification() {
     {
       label: (
         <div className="notification-wrapper">
-          <div className="notification">
+          <div className="notification no-mb">
             <Avatar src="/images/antonio1.png" size={48} />
             <div className="content">
               <h4 className="name">Cindy Lillibridge</h4>

@@ -20,28 +20,28 @@ export const router = createBrowserRouter([
     // path: '/',
     children: [
       {
-        path: 'dashboard',
+        path: '/dashboard',
         index: true,
         element: <Home />
       },
       {
-        path: 'invoices',
+        path: '/invoices',
         element: <Invoices />
       },
       {
-        path: 'transactions',
+        path: '/transactions',
         element: <Transactions />
       },
       {
-        path: 'recipients',
+        path: '/recipients',
         element: <Recipients />
       },
       {
-        path: 'invoices/create',
+        path: '/invoices/create',
         element: <CreateInvoice />
       },
       {
-        path: 'my-wallets',
+        path: '/my-wallets',
         element: <MyWallets />
       }
     ]
