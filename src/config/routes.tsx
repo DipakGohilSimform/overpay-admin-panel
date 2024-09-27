@@ -20,23 +20,23 @@ export const router = createBrowserRouter([
     path: '/auth',
     children: [
       {
-        path: '/signin',
+        path: 'signin',
         element: <Signin />
       },
       {
-        path: '/signup',
+        path: 'signup',
         element: <Signup />
       },
       {
-        path: '/forgotpassword',
+        path: 'forgotpassword',
         element: <ForgotPassword />
       },
       {
-        path: '/otp',
+        path: 'otp',
         element: <Otp />
       },
       {
-        path: '/reason',
+        path: 'reason',
         element: <Reason />
       }
     ]
@@ -46,28 +46,28 @@ export const router = createBrowserRouter([
     path: '/admin',
     children: [
       {
-        path: '/dashboard',
+        path: 'dashboard',
         index: true,
         element: <Home />
       },
       {
-        path: '/invoices', // Changed to relative path
+        path: 'invoices', // Changed to relative path
         element: <Invoices />
       },
       {
-        path: '/transactions', // Changed to relative path
+        path: 'transactions', // Changed to relative path
         element: <Transactions />
       },
       {
-        path: '/recipients', // Changed to relative path
+        path: 'recipients', // Changed to relative path
         element: <Recipients />
       },
       {
-        path: '/invoices/create', // Changed to relative path
+        path: 'invoices/create', // Changed to relative path
         element: <CreateInvoice />
       },
       {
-        path: '/my-wallets', // Changed to relative path
+        path: 'my-wallets', // Changed to relative path
         element: <MyWallets />
       }
     ]
