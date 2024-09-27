@@ -29,20 +29,20 @@ const getItem = (
 })
 
 const primaryMenuItems: MenuItem[] = [
-  getItem(<Link to="/dashboard">Dashboard</Link>, '1', <Dashboard />),
-  getItem(<Link to="/invoices">Invoices</Link>, '2', <Invoice />),
-  getItem(<Link to="/messages">Messages</Link>, '3', <Message />),
-  getItem(<Link to="/my-wallets">My Wallets</Link>, '4', <Card />),
+  getItem(<Link to="/admin/dashboard">Dashboard</Link>, '1', <Dashboard />),
+  getItem(<Link to="/admin/invoices">Invoices</Link>, '2', <Invoice />),
+  getItem(<Link to="/admin/messages">Messages</Link>, '3', <Message />),
+  getItem(<Link to="/admin/my-wallets">My Wallets</Link>, '4', <Card />),
   getItem('Activity', 'sub1', <Activity />, [
-    getItem(<Link to="/transactions">Transactions</Link>, '5'),
-    getItem(<Link to="/recipients">Recipients</Link>, '6')
+    getItem(<Link to="/admin/transactions">Transactions</Link>, '5'),
+    getItem(<Link to="/admin/recipients">Recipients</Link>, '6')
   ]),
-  getItem(<Link to="/analytics">Analytics</Link>, '7', <Analytics />)
+  getItem(<Link to="/admin/analytics">Analytics</Link>, '7', <Analytics />)
 ]
 
 const secondaryMenuItems: MenuItem[] = [
-  getItem(<Link to="/help">Get Help</Link>, '8', <Question />),
-  getItem(<Link to="/settings">Settings</Link>, '9', <Settings />)
+  getItem(<Link to="/admin/help">Get Help</Link>, '8', <Question />),
+  getItem(<Link to="/admin/settings">Settings</Link>, '9', <Settings />)
 ]
 
 export default function Sidebar() {

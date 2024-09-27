@@ -17,31 +17,31 @@ import MyWallets from '@/pages/dashboard/mywallets/page'
 export const router = createBrowserRouter([
   {
     element: <DashboardLayout />,
-    // path: '/',
+    path: '/admin',
     children: [
       {
-        path: '/dashboard',
+        path: 'dashboard',
         index: true,
         element: <Home />
       },
       {
-        path: '/invoices',
+        path: 'invoices', // Changed to relative path
         element: <Invoices />
       },
       {
-        path: '/transactions',
+        path: 'transactions', // Changed to relative path
         element: <Transactions />
       },
       {
-        path: '/recipients',
+        path: 'recipients', // Changed to relative path
         element: <Recipients />
       },
       {
-        path: '/invoices/create',
+        path: 'invoices/create', // Changed to relative path
         element: <CreateInvoice />
       },
       {
-        path: '/my-wallets',
+        path: 'my-wallets', // Changed to relative path
         element: <MyWallets />
       }
     ]

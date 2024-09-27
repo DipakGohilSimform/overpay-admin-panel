@@ -31,7 +31,7 @@ export default function Signin() {
               <Checkbox>Remember me</Checkbox>
               <Link to="/forgotpassword">Forgot Password?</Link>
             </div>
-            <Button type="primary" block size="large" href="/dashboard">
+            <Button type="primary" block size="large" href="/admin/dashboard">
               Sign In
             </Button>
             <p className="linkText">
