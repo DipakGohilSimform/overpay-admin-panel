@@ -17,8 +17,33 @@ import MyWallets from '@/pages/dashboard/mywallets/page'
 export const router = createBrowserRouter([
   {
     element: <DashboardLayout />,
-    path: '/admin',
     children: [
+      {
+        element: <AuthLayout />,
+        path: '/',
+        children: [
+          {
+            path: '/',
+            element: <Signin />
+          },
+          {
+            path: 'signup',
+            element: <Signup />
+          },
+          {
+            path: 'forgotpassword',
+            element: <ForgotPassword />
+          },
+          {
+            path: 'otp',
+            element: <Otp />
+          },
+          {
+            path: 'reason',
+            element: <Reason />
+          }
+        ]
+      },
       {
         path: 'dashboard',
         index: true,
@@ -43,32 +68,6 @@ export const router = createBrowserRouter([
       {
         path: 'my-wallets', // Changed to relative path
         element: <MyWallets />
-      }
-    ]
-  },
-  {
-    element: <AuthLayout />,
-    path: '/',
-    children: [
-      {
-        path: '/',
-        element: <Signin />
-      },
-      {
-        path: 'signup',
-        element: <Signup />
-      },
-      {
-        path: 'forgotpassword',
-        element: <ForgotPassword />
-      },
-      {
-        path: 'otp',
-        element: <Otp />
-      },
-      {
-        path: 'reason',
-        element: <Reason />
       }
     ]
   },
