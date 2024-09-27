@@ -41,7 +41,7 @@ export default function Actions() {
       menu={menuProps}
       overlayClassName="action-dropdown"
       trigger={['click']}
-      getPopupContainer={(t) => t.parentNode}
+      getPopupContainer={(t) => (t.parentNode as HTMLElement) || document.body}
       placement="bottomRight"
     >
       <Button icon={<More />} type="default" />

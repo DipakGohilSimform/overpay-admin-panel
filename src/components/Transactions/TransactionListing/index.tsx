@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { TableProps } from 'antd'
 import { Table } from '@/components/Ant/Table'
 import { BOA, BTC, Facebook, Sort, Stripe, UI8, Upwork } from '@/components/Icons'
 import Amount from '@/components/Table/Amount'
@@ -23,30 +22,30 @@ interface DataType {
   action: string
 }
 
-const columns: TableProps<DataType>['columns'] = [
+const columns: any = [
   {
     title: 'Name/Business',
     dataIndex: 'name',
     key: 'name',
-    render: (_, record) => (
+    render: (record: DataType) => (
       <NameContent icon={record.icon} name={record.name} action={record.action} />
     ),
-    sorter: (a, b) => a.name.length - b.name.length,
-    sortIcon: (_props: { sortOrder: any }) => <Sort />
+    sorter: (a: DataType, b: DataType) => a.name.length - b.name.length,
+    sortIcon: (_props: { sortOrder: DataType }) => <Sort />
   },
   {
     title: 'Date',
     dataIndex: 'date',
     key: 'date',
-    render: (_, record) => <DateWithTime date={record.date} time={record.time} />,
-    sorter: (a, b) => a.date - b.date,
+    render: (record: DataType) => <DateWithTime date={record.date} time={record.time} />,
+    sorter: (a: DataType, b: DataType) => a.date - b.date,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
   {
     title: 'Invoice ID',
     dataIndex: 'invoice',
     key: 'invoice',
-    render: (_, record) => <DateWithTime date={record.invoice} />,
+    render: (record: DataType) => <DateWithTime date={record.invoice} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -54,15 +53,15 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Amount',
     dataIndex: 'amount',
     key: 'amount',
-    render: (_, record) => <Amount amount={record.amount} />,
-    sorter: (a, b) => a.amount - b.amount,
+    render: (record: DataType) => <Amount amount={record.amount} />,
+    sorter: (a: DataType, b: DataType) => a.amount - b.amount,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
   {
     title: 'Status',
     dataIndex: 'status',
     key: 'status',
-    render: (_, record) => <Status color={record.color} text={record.statusText} />,
+    render: (record: DataType) => <Status color={record.color} text={record.statusText} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },

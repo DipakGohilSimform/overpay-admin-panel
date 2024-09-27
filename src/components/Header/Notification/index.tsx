@@ -102,7 +102,7 @@ export default function Notification() {
       menu={{ items }}
       trigger={['click']}
       placement="bottomRight"
-      getPopupContainer={(t) => t.parentNode}
+      getPopupContainer={(t) => (t.parentNode as HTMLElement) || document.body}
     >
       <div>
         <Badge>

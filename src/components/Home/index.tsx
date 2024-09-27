@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/label-has-associated-control */
-import type { TableProps } from 'antd'
 import { Avatar, Button, Form, FormItem, Input, Select } from '../Ant'
 import { Table } from '../Ant/Table'
 import {
@@ -32,22 +30,22 @@ interface DataType {
   amount: string
 }
 
-const columns: TableProps<DataType>['columns'] = [
+const columns = [
   {
     key: 'name',
-    render: (_, record) => <NameContent icon={record.icon} name={record.name} />
+    render: (record: DataType) => <NameContent icon={record.icon} name={record.name} />
   },
   {
     key: 'date',
-    render: (_, record) => <DateWithCalendar date={record.date} />
+    render: (record: DataType) => <DateWithCalendar date={record.date} />
   },
   {
     key: 'amount',
-    render: (_, record) => <Amount amount={record.amount} />
+    render: (record: DataType) => <Amount amount={record.amount} />
   },
   {
     key: 'status',
-    render: (_, record) => <Status color={record.color} text={record.statusText} />
+    render: (record: DataType) => <Status color={record.color} text={record.statusText} />
   }
 ]
 
@@ -103,11 +101,11 @@ export default function HomeContent() {
             <div className="data-info">
               <div className="tag-wrapper">
                 <img src="/images/income-bar.png" alt="income" />
-                <label>Income</label>
+                <span>Income</span>
               </div>
               <div className="tag-wrapper">
                 <img src="/images/expense-bar.png" alt="expense" />
-                <label>Expenses</label>
+                <span>Expenses</span>
               </div>
               <Select
                 variant="filled"

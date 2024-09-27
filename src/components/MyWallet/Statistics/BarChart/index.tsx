@@ -1,5 +1,5 @@
+/* eslint-disable react/require-default-props */
 /* eslint-disable react/no-array-index-key */
-/* eslint-disable react/prop-types */
 import React, { useState } from 'react'
 import {
   Bar,
@@ -12,9 +12,9 @@ import {
   YAxis
 } from 'recharts'
 
-interface CustomTooltipProps extends TooltipProps {
-  active: boolean
-  payload: { value: number }[]
+interface CustomTooltipProps extends TooltipProps<number, string> {
+  active?: boolean
+  payload?: { value: number }[]
 }
 
 function CustomTooltip({ active, payload }: CustomTooltipProps) {
@@ -68,10 +68,7 @@ export default function Chart() {
           axisLine={false}
           tickLine={false}
         />
-        <Tooltip
-          cursor={{ fill: 'transparent' }}
-          content={<CustomTooltip active={undefined} payload={undefined} />}
-        />
+        <Tooltip cursor={{ fill: 'transparent' }} content={<CustomTooltip />} />
         <Bar
           dataKey="amount"
           barSize={40}
@@ -79,7 +76,7 @@ export default function Chart() {
           fill="var(--neutral-100)"
           onMouseLeave={() => setFocusBar(null)}
         >
-          {data.map((entry, index) => (
+          {data.map((_entry, index) => (
             <Cell
               key={`cell-${index}`}
               fill={focusBar === index ? 'var(--primary-500)' : 'var(--neutral-100)'}

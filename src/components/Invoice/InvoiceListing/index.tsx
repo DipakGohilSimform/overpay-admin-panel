@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { TableProps } from 'antd'
 import { Sort } from '@/components/Icons'
 import NameContent from '@/components/Table/NameContent'
 import { Checkbox } from '@/components/Ant'
@@ -23,12 +22,12 @@ interface DataType {
   statusText: string
 }
 
-const columns: TableProps<DataType>['columns'] = [
+const columns = [
   {
     title: 'Name',
     dataIndex: 'name',
     key: 'name',
-    render: (_, record) => (
+    render: (record: DataType) => (
       <NameContent icon={record.icon} name={record.name} action={record.action} />
     ),
     sorter: true,
@@ -38,7 +37,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Date',
     dataIndex: 'date',
     key: 'date',
-    render: (_, record) => <Data text={record.date} />,
+    render: (record: DataType) => <Data text={record.date} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -46,7 +45,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Client',
     dataIndex: 'client',
     key: 'client',
-    render: (_, record) => <Data text={record.client} />,
+    render: (record: DataType) => <Data text={record.client} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -54,7 +53,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Amount',
     dataIndex: 'amount',
     key: 'amount',
-    render: (_, record) => <Amount amount={record.amount} />,
+    render: (record: DataType) => <Amount amount={record.amount} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -62,7 +61,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Status',
     dataIndex: 'status',
     key: 'status',
-    render: (_, record) => <Status color={record.color} text={record.statusText} />,
+    render: (record: DataType) => <Status color={record.color} text={record.statusText} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },

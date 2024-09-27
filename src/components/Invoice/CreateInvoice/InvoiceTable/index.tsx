@@ -1,4 +1,3 @@
-import { TableProps } from 'antd'
 import { Input, Table } from '@/components/Ant'
 
 interface DataType {
@@ -10,7 +9,7 @@ interface DataType {
   total: string
 }
 
-const columns: TableProps<DataType>['columns'] = [
+const columns = [
   {
     key: 'item',
     dataIndex: 'item',

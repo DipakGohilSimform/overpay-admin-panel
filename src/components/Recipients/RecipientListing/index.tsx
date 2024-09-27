@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { TableProps } from 'antd'
 import { Table } from '@/components/Ant/Table'
 import { Sort } from '@/components/Icons'
 import NameContent from '@/components/Table/NameContent'
@@ -19,12 +18,12 @@ interface DataType {
   date_time: string
 }
 
-const columns: TableProps<DataType>['columns'] = [
+const columns = [
   {
     title: 'Name/Business',
     dataIndex: 'name',
     key: 'name',
-    render: (_, record) => <NameContent icon={record.icon} name={record.name} />,
+    render: (record: DataType) => <NameContent icon={record.icon} name={record.name} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -32,7 +31,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Email',
     dataIndex: 'email',
     key: 'email',
-    render: (_, record) => <Data text={record.email} />,
+    render: (record: DataType) => <Data text={record.email} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -40,7 +39,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Account Type',
     dataIndex: 'account_type',
     key: 'account_type',
-    render: (_, record) => <Data text={record.account_type} />,
+    render: (record: DataType) => <Data text={record.account_type} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -48,7 +47,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Currency',
     dataIndex: 'currency',
     key: 'currency',
-    render: (_, record) => <Currency img={record.img} value={record.currency} />,
+    render: (record: DataType) => <Currency img={record.img} value={record.currency} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -56,7 +55,7 @@ const columns: TableProps<DataType>['columns'] = [
     title: 'Date',
     dataIndex: 'date',
     key: 'date',
-    render: (_, record) => <Data text={record.date_time} />,
+    render: (record: DataType) => <Data text={record.date_time} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   }
