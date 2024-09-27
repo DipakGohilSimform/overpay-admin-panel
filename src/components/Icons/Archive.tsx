@@ -1,0 +1,35 @@
+export function Archive() {
+  return (
+    <span className="anticon">
+      <svg
+        width="1em"
+        height="1em"
+        viewBox="0 0 20 20"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M15.8333 3.33325H4.16667C3.24619 3.33325 2.5 4.07944 2.5 4.99992C2.5 5.92039 3.24619 6.66659 4.16667 6.66659H15.8333C16.7538 6.66659 17.5 5.92039 17.5 4.99992C17.5 4.07944 16.7538 3.33325 15.8333 3.33325Z"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M4.16663 6.6665V14.9998C4.16663 15.4419 4.34222 15.8658 4.65478 16.1783C4.96734 16.4909 5.39127 16.6665 5.83329 16.6665H14.1666C14.6087 16.6665 15.0326 16.4909 15.3451 16.1783C15.6577 15.8658 15.8333 15.4419 15.8333 14.9998V6.6665"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path
+          d="M8.33337 10H11.6667"
+          stroke="currentColor"
+          strokeWidth="1.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </span>
+  )
+}
