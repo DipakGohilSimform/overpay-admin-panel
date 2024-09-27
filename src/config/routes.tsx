@@ -16,36 +16,6 @@ import MyWallets from '@/pages/dashboard/mywallets/page'
 
 export const router = createBrowserRouter([
   {
-    element: <DashboardLayout />,
-    children: [
-      {
-        path: '/dashboard',
-        index: true,
-        element: <Home />
-      },
-      {
-        path: 'invoices', // Changed to relative path
-        element: <Invoices />
-      },
-      {
-        path: 'transactions', // Changed to relative path
-        element: <Transactions />
-      },
-      {
-        path: 'recipients', // Changed to relative path
-        element: <Recipients />
-      },
-      {
-        path: 'invoices/create', // Changed to relative path
-        element: <CreateInvoice />
-      },
-      {
-        path: 'my-wallets', // Changed to relative path
-        element: <MyWallets />
-      }
-    ]
-  },
-  {
     element: <AuthLayout />,
     path: '/',
     children: [
@@ -68,6 +38,37 @@ export const router = createBrowserRouter([
       {
         path: 'reason',
         element: <Reason />
+      }
+    ]
+  },
+  {
+    element: <DashboardLayout />,
+    path: '/',
+    children: [
+      {
+        path: '/',
+        index: true,
+        element: <Home />
+      },
+      {
+        path: 'invoices', // Changed to relative path
+        element: <Invoices />
+      },
+      {
+        path: 'transactions', // Changed to relative path
+        element: <Transactions />
+      },
+      {
+        path: 'recipients', // Changed to relative path
+        element: <Recipients />
+      },
+      {
+        path: 'invoices/create', // Changed to relative path
+        element: <CreateInvoice />
+      },
+      {
+        path: 'my-wallets', // Changed to relative path
+        element: <MyWallets />
       }
     ]
   },
