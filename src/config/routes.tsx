@@ -17,10 +17,11 @@ import MyWallets from '@/pages/dashboard/mywallets/page'
 export const router = createBrowserRouter([
   {
     element: <AuthLayout />,
-    path: '/auth',
+    path: '/',
     children: [
       {
-        path: 'signin',
+        path: '',
+        index: true,
         element: <Signin />
       },
       {
