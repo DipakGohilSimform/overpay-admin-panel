@@ -23,7 +23,7 @@ const columns = [
     title: 'Name/Business',
     dataIndex: 'name',
     key: 'name',
-    render: (record: DataType) => <NameContent icon={record.icon} name={record.name} />,
+    render: (_: any, record: any) => <NameContent icon={record.icon} name={record.name} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -31,7 +31,7 @@ const columns = [
     title: 'Email',
     dataIndex: 'email',
     key: 'email',
-    render: (record: DataType) => <Data text={record.email} />,
+    render: (_: any, record: any) => <Data text={record.email} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -39,7 +39,7 @@ const columns = [
     title: 'Account Type',
     dataIndex: 'account_type',
     key: 'account_type',
-    render: (record: DataType) => <Data text={record.account_type} />,
+    render: (_: any, record: any) => <Data text={record.account_type} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -47,7 +47,7 @@ const columns = [
     title: 'Currency',
     dataIndex: 'currency',
     key: 'currency',
-    render: (record: DataType) => <Currency img={record.img} value={record.currency} />,
+    render: (_: any, record: any) => <Currency img={record.img} value={record.currency} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -55,7 +55,7 @@ const columns = [
     title: 'Date',
     dataIndex: 'date',
     key: 'date',
-    render: (record: DataType) => <Data text={record.date_time} />,
+    render: (_: any, record: any) => <Data text={record.date_time} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   }

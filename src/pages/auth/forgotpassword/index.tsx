@@ -20,7 +20,7 @@ export default function ForgotPassword() {
                 Send Link
               </Button>
             </Form>
-            <Link to="/auth/forgotpassword" className="forgotEmailLink">
+            <Link to="/forgotpassword" className="forgotEmailLink">
               Forgot your Email?
             </Link>
           </>

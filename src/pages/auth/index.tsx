@@ -6,10 +6,10 @@ import { CarouselContent } from '@/components/Auth/CarouselContent/CarouselConte
 import { Logo } from '@/components/Logo/Logo'
 
 export default function AuthLayout() {
-  const matchSignup = useMatch('/auth/signup')
-  const matchForgotPassword = useMatch('/auth/forgotpassword')
-  const matchOtp = useMatch('/auth/otp')
-  const matchReason = useMatch('/auth/reason')
+  const matchSignup = useMatch('/signup')
+  const matchForgotPassword = useMatch('/forgotpassword')
+  const matchOtp = useMatch('/otp')
+  const matchReason = useMatch('/reason')
   const isSignup = !!matchSignup
   const hideBannerAndLogo = !!matchForgotPassword || !!matchOtp || !!matchReason
   const logoColor = isSignup ? 'light-light' : 'dark-dark'

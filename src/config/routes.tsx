@@ -17,7 +17,7 @@ import MyWallets from '@/pages/dashboard/mywallets/page'
 export const router = createBrowserRouter([
   {
     element: <DashboardLayout />,
-    path: '/',
+    // path: '/',
     children: [
       {
         path: 'dashboard',

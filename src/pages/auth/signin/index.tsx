@@ -29,13 +29,13 @@ export default function Signin() {
             </FormItem>
             <div className="rememberWrapper">
               <Checkbox>Remember me</Checkbox>
-              <Link to="/auth/forgotpassword">Forgot Password?</Link>
+              <Link to="/forgotpassword">Forgot Password?</Link>
             </div>
             <Button type="primary" block size="large" href="/dashboard">
               Sign In
             </Button>
             <p className="linkText">
-              Don&apos;t have an account? <Link to="/auth/signup">Sign Up</Link>
+              Don&apos;t have an account? <Link to="/signup">Sign Up</Link>
             </p>
           </Form>
         </>

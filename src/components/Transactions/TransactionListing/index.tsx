@@ -22,30 +22,30 @@ interface DataType {
   action: string
 }
 
-const columns: any = [
+const columns = [
   {
     title: 'Name/Business',
     dataIndex: 'name',
     key: 'name',
-    render: (record: DataType) => (
+    render: (_: any, record: any) => (
       <NameContent icon={record.icon} name={record.name} action={record.action} />
     ),
-    sorter: (a: DataType, b: DataType) => a.name.length - b.name.length,
-    sortIcon: (_props: { sortOrder: DataType }) => <Sort />
+    sorter: (a: any, b: any) => a.name.length - b.name.length,
+    sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
   {
     title: 'Date',
     dataIndex: 'date',
     key: 'date',
-    render: (record: DataType) => <DateWithTime date={record.date} time={record.time} />,
-    sorter: (a: DataType, b: DataType) => a.date - b.date,
+    render: (_: any, record: any) => <DateWithTime date={record.date} time={record.time} />,
+    sorter: (a: any, b: any) => a.date - b.date,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
   {
     title: 'Invoice ID',
     dataIndex: 'invoice',
     key: 'invoice',
-    render: (record: DataType) => <DateWithTime date={record.invoice} />,
+    render: (_: any, record: any) => <DateWithTime date={record.invoice} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -53,15 +53,15 @@ const columns: any = [
     title: 'Amount',
     dataIndex: 'amount',
     key: 'amount',
-    render: (record: DataType) => <Amount amount={record.amount} />,
-    sorter: (a: DataType, b: DataType) => a.amount - b.amount,
+    render: (_: any, record: any) => <Amount amount={record.amount} />,
+    sorter: (a: any, b: any) => a.amount - b.amount,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
   {
     title: 'Status',
     dataIndex: 'status',
     key: 'status',
-    render: (record: DataType) => <Status color={record.color} text={record.statusText} />,
+    render: (_: any, record: any) => <Status color={record.color} text={record.statusText} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },

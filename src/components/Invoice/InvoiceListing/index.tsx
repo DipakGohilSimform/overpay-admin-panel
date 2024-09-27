@@ -22,12 +22,12 @@ interface DataType {
   statusText: string
 }
 
-const columns = [
+const columns: any = [
   {
     title: 'Name',
     dataIndex: 'name',
     key: 'name',
-    render: (record: DataType) => (
+    render: (_: any, record: any) => (
       <NameContent icon={record.icon} name={record.name} action={record.action} />
     ),
     sorter: true,
@@ -37,7 +37,7 @@ const columns = [
     title: 'Date',
     dataIndex: 'date',
     key: 'date',
-    render: (record: DataType) => <Data text={record.date} />,
+    render: (_: any, record: any) => <Data text={record.date} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -45,7 +45,7 @@ const columns = [
     title: 'Client',
     dataIndex: 'client',
     key: 'client',
-    render: (record: DataType) => <Data text={record.client} />,
+    render: (_: any, record: any) => <Data text={record.client} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -53,7 +53,7 @@ const columns = [
     title: 'Amount',
     dataIndex: 'amount',
     key: 'amount',
-    render: (record: DataType) => <Amount amount={record.amount} />,
+    render: (_: any, record: any) => <Amount amount={record.amount} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
@@ -61,7 +61,7 @@ const columns = [
     title: 'Status',
     dataIndex: 'status',
     key: 'status',
-    render: (record: DataType) => <Status color={record.color} text={record.statusText} />,
+    render: (_: any, record: any) => <Status color={record.color} text={record.statusText} />,
     sorter: true,
     sortIcon: (_props: { sortOrder: any }) => <Sort />
   },
