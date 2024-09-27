@@ -48,26 +48,26 @@ export const router = createBrowserRouter([
   },
   {
     element: <AuthLayout />,
-    path: '/',
+    // path: '/',
     children: [
       {
         path: '/',
         element: <Signin />
       },
       {
-        path: '/signup',
+        path: 'signup',
         element: <Signup />
       },
       {
-        path: '/forgotpassword',
+        path: 'forgotpassword',
         element: <ForgotPassword />
       },
       {
-        path: '/otp',
+        path: 'otp',
         element: <Otp />
       },
       {
-        path: '/reason',
+        path: 'reason',
         element: <Reason />
       }
     ]
