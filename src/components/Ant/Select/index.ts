@@ -23,6 +23,9 @@ export const Select = styled(AntSelect)`
       letter-spacing: 0.2px;
     }
   }
+  .ant-select-dropdown {
+    background-color: var(--neutral-50);
+  }
   &.time-range-select {
     height: 50px;
     flex: 1 1 auto;
@@ -53,10 +56,17 @@ export const Select = styled(AntSelect)`
       opacity: 1;
     }
   }
-  &.ant-select-selector * {
-    background-color: var(--neutral-50) !important;
+  &.ant-select-open {
+    background-color: var(--neutral-50);
+    color: var(--neutral-0);
+    border-color: var(--neutral-200);
   }
-  &.ant-select-open * {
-    background-color: var(--neutral-50) !important;
+  .ant-select-item-option-content {
+    color: var(--neutral-1000);
+  }
+  .ant-select-item-option-selected:not(.ant-select-item-option-disabled) {
+    .ant-select-item-option-content {
+      color: var(--white);
+    }
   }
 `

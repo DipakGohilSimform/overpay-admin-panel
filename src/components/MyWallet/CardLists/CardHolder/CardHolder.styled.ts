@@ -13,6 +13,7 @@ export const CardContainer = styled.div`
       font-weight: 800;
       line-height: 27px;
       letter-spacing: 0.2px;
+      color: var(--neutral-900);
     }
     span {
       font-size: 18px;

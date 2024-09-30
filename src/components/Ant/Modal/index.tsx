@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const Modal = styled(AntModal)`
   .ant-modal-content {
     padding: 24px;
+    background-color: var(--neutral-50);
   }
   .ant-modal-body {
     margin-top: 30px;
@@ -47,5 +48,24 @@ export const Modal = styled(AntModal)`
     letter-spacing: 0.2px;
     font-weight: 800;
     color: var(--neutral-900);
+  }
+  .anticon {
+    color: var(--neutral-900);
+    cursor: pointer;
+  }
+  .ant-btn-default {
+    &.ant-btn-default {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 21px;
+      letter-spacing: 0.2px;
+      height: unset;
+      border: none;
+      color: var(--primary-500);
+      &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+        color: var(--primary-500);
+        background-color: unset;
+      }
+    }
   }
 `

@@ -13,6 +13,7 @@ export const WidgetWrappper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     .anticon {
       font-size: 24px;
     }

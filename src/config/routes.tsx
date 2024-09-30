@@ -52,23 +52,23 @@ export const router = createBrowserRouter([
         element: <Home />
       },
       {
-        path: 'invoices', // Changed to relative path
+        path: 'invoices',
         element: <Invoices />
       },
       {
-        path: 'transactions', // Changed to relative path
+        path: 'transactions',
         element: <Transactions />
       },
       {
-        path: 'recipients', // Changed to relative path
+        path: 'recipients',
         element: <Recipients />
       },
       {
-        path: 'invoices/create', // Changed to relative path
+        path: 'invoices/create',
         element: <CreateInvoice />
       },
       {
-        path: 'my-wallets', // Changed to relative path
+        path: 'my-wallets',
         element: <MyWallets />
       }
     ]

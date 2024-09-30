@@ -32,7 +32,7 @@ export const SidebarMenuStyles = styled(Menu)`
       border-radius: 12px;
       color: var(--neutral-600);
       &:active {
-        background-color: var(--neutral-250);
+        /* background-color: var(--neutral-250); */
       }
       .anticon {
         font-size: 20px;
@@ -86,6 +86,9 @@ export const SidebarMenuStyles = styled(Menu)`
         color: var(--primary-500);
       }
     }
+  }
+  .ant-menu-item:not(.ant-menu-item-selected):active {
+    background-color: transparent;
   }
   .ant-menu-submenu {
     color: var(--neutral-600);

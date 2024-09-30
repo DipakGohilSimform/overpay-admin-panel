@@ -39,7 +39,9 @@ export const componentTokens: OverrideToken = {
     controlHeight: 48,
     controlHeightLG: 56,
     borderRadius: 12,
-    borderRadiusLG: 12
+    borderRadiusLG: 12,
+    defaultBg: 'transparent',
+    defaultHoverColor: 'var(--neutral-0)'
   },
   Select: {
     colorBorder: 'var(--neutral-300)',
@@ -52,7 +54,8 @@ export const componentTokens: OverrideToken = {
     borderRadius: 8,
     borderRadiusLG: 8,
     borderRadiusSM: 4,
-    optionPadding: '6px 8px'
+    optionPadding: '6px 8px',
+    colorBgContainer: 'var(--neutral-50)'
   },
   Layout: {
     siderBg: 'var(--neutral-50)',
@@ -64,7 +67,8 @@ export const componentTokens: OverrideToken = {
     colorBgBase: 'var(--neutral-50)',
     itemBg: 'var(--neutral-50)',
     itemSelectedColor: 'var(--white)',
-    itemSelectedBg: 'var(--primary-500)'
+    itemSelectedBg: 'var(--primary-500)',
+    itemActiveBg: 'var(--neutral-200)'
   },
   Modal: {
     borderRadiusLG: 16
@@ -92,8 +96,8 @@ export const componentTokens: OverrideToken = {
     paddingBlock: 16,
     paddingInline: 16,
     borderRadius: 12,
-    colorBgContainer: 'var(--neutral-0)',
-    activeShadow: 'none'
+    activeShadow: 'none',
+    colorBgContainer: 'var(--neutral-50)'
   },
   Checkbox: {
     colorBorder: 'var(--neutral-300)',

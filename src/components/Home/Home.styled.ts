@@ -60,19 +60,21 @@ export const HomeWrapper = styled.div`
       }
     }
     .view-all-btn {
-      border: none;
-      background: var(--neutral-50);
-      padding: 8px 12px;
-      font-size: 12px;
-      font-weight: 600;
-      line-height: 18px;
-      letter-spacing: 0.4px;
-      border-radius: 8px;
-      height: 34px;
-      color: var(--neutral-900);
-      &:hover {
-        background: var(--neutral-250);
+      &.view-all-btn {
+        border: none;
+        background: var(--neutral-50);
+        padding: 8px 12px;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0.4px;
+        border-radius: 8px;
+        height: 34px;
         color: var(--neutral-900);
+        &:hover {
+          background: var(--neutral-50);
+          color: var(--neutral-900);
+        }
       }
     }
     .data-info {
@@ -103,6 +105,13 @@ export const HomeWrapper = styled.div`
           letter-spacing: 0.2px;
           color: var(--neutral-900);
         }
+      }
+      span {
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0.4;
+        color: var(--neutral-900);
       }
     }
     .recent-transactions {

@@ -34,10 +34,7 @@ function TransfarModal(props: ModalProps) {
         <Flex gap={24} vertical>
           <Flex gap={20} justify="space-between" align="center">
             <h6>Transfer details</h6>
-            <Flex align="center" gap={8}>
-              <Edit />
-              <span>Edit</span>
-            </Flex>
+            <Button icon={<Edit />}>Edit</Button>
           </Flex>
           <Flex gap={8} vertical>
             <Flex gap={20} align="center" justify="space-between" style={{ height: '32px' }}>
@@ -66,10 +63,7 @@ function TransfarModal(props: ModalProps) {
         <Flex gap={24} vertical>
           <Flex gap={20} justify="space-between" align="center">
             <h6>Recipient</h6>
-            <Flex align="center" gap={8}>
-              <Edit />
-              <span>Edit</span>
-            </Flex>
+            <Button icon={<Edit />}>Edit</Button>
           </Flex>
           <Flex gap={8} vertical>
             <Flex gap={20} align="center" justify="space-between" style={{ height: '32px' }}>

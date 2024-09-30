@@ -54,9 +54,9 @@ function SendMoneyModal(props: ModalProps) {
             </Flex>
             <Flex gap={32} wrap>
               <Flex gap={12} vertical flex={1}>
-                <PaymentCard img="./images/visa.png" method="Visa" price="$24,098.00" />
-                <PaymentCard img="./images/mastercard.png" method="Mastercard" price="$14,111.00" />
-                <PaymentCard img="./images/payoneer.png" method="Payoneer" price="$34,245.00" />
+                <PaymentCard img="/images/visa.png" method="Visa" price="$24,098.00" />
+                <PaymentCard img="/images/mastercard.png" method="Mastercard" price="$14,111.00" />
+                <PaymentCard img="/images/payoneer.png" method="Payoneer" price="$34,245.00" />
               </Flex>
               <Flex gap={12} vertical flex={1}>
                 <img src="/images/Card1.png" alt="VisaCard" />

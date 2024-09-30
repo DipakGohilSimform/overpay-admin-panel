@@ -120,7 +120,9 @@ hr {
     font-style:normal;
   }}
 
-
+  .ant-dropdown-menu{
+  background-color: var(--neutral-50);
+}
 `
 
 export default GlobalStyle
