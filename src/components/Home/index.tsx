@@ -19,7 +19,7 @@ import NameContent from '../Table/NameContent'
 import Status from '../Table/Status'
 import DateWithCalendar from '../Table/DateWithCalendar'
 import Amount from '../Table/Amount'
-import Statistics from '../MyWallet/Statistics'
+import Chart from '../MyWallet/Statistics/BarChart'
 
 interface DataType {
   key: string
@@ -122,7 +122,7 @@ export default function HomeContent() {
             </div>
           }
         >
-          <Statistics />
+          <Chart />
           {/* <img src="/images/money-flow-graph.png" alt="moneyflow" /> */}
         </BorderedContainer>
         <BorderedContainer
