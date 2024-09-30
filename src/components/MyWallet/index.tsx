@@ -1,6 +1,6 @@
 import CardLists from './CardLists'
 import { WalletContainer } from './MyWallet.styled'
-import Statistics from './Statistics'
+import Chart from './Statistics/BarChart'
 
 export default function MyWalletContent() {
   return (
@@ -9,7 +9,7 @@ export default function MyWalletContent() {
         <CardLists />
       </div>
       <div className="data-holder">
-        <Statistics />
+        <Chart />
       </div>
     </WalletContainer>
   )

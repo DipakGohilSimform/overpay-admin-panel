@@ -63,7 +63,7 @@ export default function Chart() {
         />
         <YAxis
           className="chart-text"
-          ticks={[0, 3000, 5000, 10000]}
+          ticks={[0, 1000, 3000, 5000, 7000]}
           tickFormatter={(tick) => `${tick / 1000}k`}
           axisLine={false}
           tickLine={false}
