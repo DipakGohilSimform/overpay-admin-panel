@@ -41,12 +41,16 @@ export const HomeWrapper = styled.div`
           padding: 10px;
           gap: 2px;
           color: var(--primary-500);
+          background-color: var(--white);
           border: none;
           .ant-btn-icon {
             flex-shrink: 0;
             .anticon {
               font-size: 16px;
             }
+          }
+          &:hover {
+            color: var(--black);
           }
         }
       }

@@ -3,6 +3,7 @@ import styled from 'styled-components'
 
 export const Input = styled(AntInput)`
   height: 56px;
+  background: var(--neutral-0);
   &.ant-input-outlined:focus,
   &.ant-input-outlined:focus-within {
     border-color: var(--primary-500);

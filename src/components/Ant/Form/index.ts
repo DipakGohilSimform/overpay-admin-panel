@@ -9,4 +9,7 @@ export const Form = styled(AntForm)`
     .ant-col-xl-24.ant-form-item-label {
     padding: 0 0 4px;
   }
+  .ant-input-password {
+    background-color: var(--neutral-0);
+  }
 `

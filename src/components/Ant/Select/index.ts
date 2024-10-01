@@ -69,4 +69,13 @@ export const Select = styled(AntSelect)`
       color: var(--white);
     }
   }
+  .ant-select-single.ant-select-open .ant-select-selection-item {
+    color: var(--neutral-0);
+  }
+  &.ant-select-focused.ant-select-filled:not(.ant-select-disabled):not(
+      .ant-select-customize-input
+    ):not(.ant-pagination-size-changer)
+    .ant-select-selector {
+    border-color: var(--neutral-200);
+  }
 `

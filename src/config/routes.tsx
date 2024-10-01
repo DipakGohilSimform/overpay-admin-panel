@@ -13,6 +13,7 @@ import Transactions from '@/pages/dashboard/transactions/page'
 import Recipients from '@/pages/dashboard/recipients/page'
 import CreateInvoice from '@/components/Invoice/CreateInvoice'
 import MyWallets from '@/pages/dashboard/mywallets/page'
+import Message from '@/pages/dashboard/message/page'
 
 export const router = createBrowserRouter([
   {
@@ -66,6 +67,10 @@ export const router = createBrowserRouter([
       {
         path: 'invoices/create',
         element: <CreateInvoice />
+      },
+      {
+        path: 'messages',
+        element: <Message />
       },
       {
         path: 'my-wallets',

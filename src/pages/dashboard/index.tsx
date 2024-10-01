@@ -7,10 +7,8 @@ import Header from '@/components/Header/Header'
 export default function DashboardLayout() {
   const location = useLocation()
 
-  // Extract the last part of the pathname for easier matching
   const currentRoute = location.pathname.split('/').pop()
 
-  // Set title based on the current route
   let title = 'Dashboard'
   if (currentRoute === 'dashboard') {
     title = 'Dashboard'
@@ -20,11 +18,13 @@ export default function DashboardLayout() {
     title = 'Recipients'
   } else if (currentRoute === 'invoices') {
     title = 'Invoices'
+  } else if (currentRoute === 'messages') {
+    title = 'Message'
   } else if (currentRoute === 'my-wallets') {
     title = 'My Wallet'
   }
 
-  const hideHeaderRoutes = ['/admin/invoices/create'] // Match full path for routes where header should be hidden
+  const hideHeaderRoutes = ['/admin/invoices/create']
 
   return (
     <DashboardLayoutStyles>

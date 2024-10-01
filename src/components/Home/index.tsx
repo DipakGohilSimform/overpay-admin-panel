@@ -123,7 +123,6 @@ export default function HomeContent() {
           }
         >
           <Chart />
-          {/* <img src="/images/money-flow-graph.png" alt="moneyflow" /> */}
         </BorderedContainer>
         <BorderedContainer
           title="Recent Transactions"
