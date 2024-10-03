@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 
 export const ContentHeaderWrapper = styled.div`
+  flex: 0 0 96px;
   display: flex;
   align-items: center;
   justify-content: space-between;

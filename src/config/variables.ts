@@ -29,6 +29,7 @@ interface ColorValues {
   'neutral-0': string
   'neutral-50': string
   'neutral-100': string
+  'neutral-150': string
   'neutral-250': string
   'neutral-200': string
   'neutral-300': string
@@ -73,6 +74,7 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'neutral-0': '255, 255, 255',
     'neutral-50': '250, 250, 250',
     'neutral-100': '242, 246, 255',
+    'neutral-150': '247, 250, 252',
     'neutral-200': '237, 242, 247',
     'neutral-250': '240,240,240',
     'neutral-300': '226, 232, 240',
@@ -113,6 +115,7 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'neutral-0': '0, 0, 0',
     'neutral-50': '26, 32, 44',
     'neutral-100': '35, 43, 56',
+    'neutral-150': '35, 43, 56',
     'neutral-200': '26, 32, 44',
     'neutral-250': '240,240,240',
     'neutral-300': '42, 49, 60',
