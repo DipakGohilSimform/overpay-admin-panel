@@ -32,6 +32,7 @@ ${colorVariables}
 html {
   height: 100%;
   scroll-behavior: smooth;
+  scrollbar-color: var(--neutral-400) var(--neutral-50) ;
 }
 
 body {

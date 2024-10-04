@@ -24,7 +24,7 @@ export default function Profile() {
       type: 'divider'
     },
     {
-      label: <Link to="/details">Your Details</Link>,
+      label: <Link to="account-details">Your Details</Link>,
       icon: <User />,
       key: '2'
     },

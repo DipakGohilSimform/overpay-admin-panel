@@ -22,6 +22,8 @@ export default function DashboardLayout() {
     title = 'Message'
   } else if (currentRoute === 'my-wallets') {
     title = 'My Wallet'
+  } else if (currentRoute === 'account-details') {
+    title = 'Account Details'
   }
 
   const hideHeaderRoutes = ['/admin/invoices/create']

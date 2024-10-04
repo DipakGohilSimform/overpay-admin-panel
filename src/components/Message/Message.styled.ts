@@ -17,5 +17,6 @@ export const MessageContainer = styled.div`
   }
   .user-details {
     flex: 0 0 300px;
+    overflow: auto;
   }
 `

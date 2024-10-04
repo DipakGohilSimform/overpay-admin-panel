@@ -49,13 +49,15 @@ export const componentTokens: OverrideToken = {
     colorPrimaryBgHover: 'var(--primary-500)',
     colorPrimaryBorderHover: 'var(--primary-500)',
     colorFillTertiary: 'var(--neutral-50)',
-    optionSelectedColor: 'var(--neutral-0)',
+    // optionSelectedColor: 'var(--neutral-0)',
     colorText: 'var(--neutral-900)',
     borderRadius: 8,
     borderRadiusLG: 8,
     borderRadiusSM: 4,
     optionPadding: '6px 8px',
-    colorBgContainer: 'var(--neutral-50)'
+    colorBgContainer: 'var(--neutral-50)',
+    selectorBg: 'var(--neutral-0)',
+    colorBgElevated: 'var(--neutral-50)'
   },
   Layout: {
     siderBg: 'var(--neutral-50)',
@@ -106,7 +108,7 @@ export const componentTokens: OverrideToken = {
     colorText: 'var(--neutral-900)',
     controlInteractiveSize: 24,
     borderRadiusSM: 24,
-    colorBgContainer: 'var(--neutral-0)'
+    colorBgContainer: 'var(--neutral-50)'
   },
   Tag: {
     borderRadiusSM: 50

@@ -7,7 +7,7 @@ export default function InvoiceAction() {
     <ActionWrapper>
       <InputSearch prefix={<Search />} placeholder="Search invoice..." />
       <div className="actions-btn-container">
-        <Button type="primary" icon={<EditInvocie />} href="invoices/create">
+        <Button type="primary" icon={<EditInvocie />} href="create">
           Create invoice
         </Button>
         <Button type="default" icon={<Filter />}>

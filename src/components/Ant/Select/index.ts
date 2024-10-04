@@ -58,7 +58,7 @@ export const Select = styled(AntSelect)`
   }
   &.ant-select-open {
     background-color: var(--neutral-50);
-    color: var(--neutral-0);
+    color: var(--neutral-900);
     border-color: var(--neutral-200);
   }
   .ant-select-item-option-content {
