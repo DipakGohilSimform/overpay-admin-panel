@@ -62,6 +62,7 @@ export const CreateContent = styled.div`
           font-size: 14px;
           font-weight: 800;
           line-height: 21px;
+          color: var(--neutral-900);
         }
       }
     }

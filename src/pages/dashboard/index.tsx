@@ -24,6 +24,10 @@ export default function DashboardLayout() {
     title = 'My Wallet'
   } else if (currentRoute === 'account-details') {
     title = 'Account Details'
+  } else if (currentRoute === 'account-setting') {
+    title = 'Account setting'
+  } else if (currentRoute === 'help') {
+    title = 'Get Help'
   }
 
   const hideHeaderRoutes = ['/admin/invoices/create']

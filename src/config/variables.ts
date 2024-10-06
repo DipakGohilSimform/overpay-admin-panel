@@ -121,7 +121,7 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'neutral-200': '42, 49, 60',
     'neutral-250': '240,240,240',
     'neutral-300': '42, 49, 60',
-    'neutral-350': '242, 246, 255',
+    'neutral-350': '42, 49, 60',
     'neutral-400': '71, 85, 105',
     'neutral-500': '100, 116, 139',
     'neutral-600': '148, 163, 184',

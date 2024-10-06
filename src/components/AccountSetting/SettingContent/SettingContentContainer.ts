@@ -2,6 +2,8 @@ import styled from 'styled-components'
 
 export const SettingContentContainer = styled.div`
   flex: 1 1 auto;
+  height: calc(100vh - 150px);
+  overflow-y: auto;
   padding: 40px 0 40px 40px;
   .setting-content {
     .setting-title {

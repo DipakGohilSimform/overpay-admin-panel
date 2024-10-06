@@ -10,6 +10,7 @@ export const ContentContainer = styled.div`
       font-weight: 800;
       line-height: 24px;
       letter-spacing: 0.2px;
+      color: var(--neutral-900);
     }
     span {
       font-size: 12px;

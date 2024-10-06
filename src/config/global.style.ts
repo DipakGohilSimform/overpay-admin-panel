@@ -33,6 +33,21 @@ html {
   height: 100%;
   scroll-behavior: smooth;
   scrollbar-color: var(--neutral-400) var(--neutral-50) ;
+
+  ::-webkit-scrollbar {
+  width: 5px; 
+  height: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1e202a;
+  outline: 1px solid #1e202a;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+}
 }
 
 body {
@@ -46,6 +61,8 @@ body {
   background-color: var(--neutral-0);
   color: var(--neutral-950);
 }
+
+
 
 img,
 picture,

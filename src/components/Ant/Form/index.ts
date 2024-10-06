@@ -12,6 +12,9 @@ export const Form = styled(AntForm)`
   .ant-input-password {
     background-color: var(--neutral-0);
   }
+  &.ant-form-vertical .ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-label {
+    padding-bottom: 10px;
+  }
   .form-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;

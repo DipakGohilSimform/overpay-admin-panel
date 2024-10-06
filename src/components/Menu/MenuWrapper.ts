@@ -31,7 +31,7 @@ export const MenuWrapper = styled.button`
       text-align: left;
     }
     .desc {
-      max-width: 208px;
+      max-width: 275px;
       font-size: 12px;
       font-weight: 400;
       line-height: 18px;

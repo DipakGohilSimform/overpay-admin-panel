@@ -12,6 +12,7 @@ export const DetailWrapper = styled.div`
     line-height: 27px;
     letter-spacing: 0.2px;
     margin-bottom: 24px;
+    color: var(--neutral-900);
   }
   .billto-bg {
     background: var(--neutral-50);

@@ -170,5 +170,12 @@ export default function InvoiceListing() {
       return <Checkbox />
     }
   }
-  return <InvoiceListingTable columns={columns} dataSource={data} rowSelection={rowSelection} />
+  return (
+    <InvoiceListingTable
+      pagination={false}
+      columns={columns}
+      dataSource={data}
+      rowSelection={rowSelection}
+    />
+  )
 }

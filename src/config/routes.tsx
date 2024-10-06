@@ -16,6 +16,7 @@ import MyWallets from '@/pages/dashboard/mywallets/page'
 import Message from '@/pages/dashboard/message/page'
 import AccountDetails from '@/pages/dashboard/account-details/page'
 import AccountSetting from '@/pages/dashboard/account-setting/page'
+import GetHelp from '@/pages/dashboard/get-help/page'
 
 export const router = createBrowserRouter([
   {
@@ -85,6 +86,10 @@ export const router = createBrowserRouter([
       {
         path: 'account-setting',
         element: <AccountSetting />
+      },
+      {
+        path: 'help',
+        element: <GetHelp />
       }
     ]
   },

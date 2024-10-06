@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const SettingSidebarContainer = styled.div`
+  height: calc(100vh - 150px);
+  overflow-y: auto;
   border-right: 1px solid var(--neutral-300);
   padding-block: 40px;
   .setting-sidebar {

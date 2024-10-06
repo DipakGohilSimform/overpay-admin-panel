@@ -41,7 +41,8 @@ export const componentTokens: OverrideToken = {
     borderRadius: 12,
     borderRadiusLG: 12,
     defaultBg: 'transparent',
-    defaultHoverColor: 'var(--neutral-0)'
+    defaultHoverColor: 'var(--neutral-0)',
+    defaultHoverBorderColor: 'var(--neutral-500)'
   },
   Select: {
     colorBorder: 'var(--neutral-300)',
@@ -49,7 +50,6 @@ export const componentTokens: OverrideToken = {
     colorPrimaryBgHover: 'var(--primary-500)',
     colorPrimaryBorderHover: 'var(--primary-500)',
     colorFillTertiary: 'var(--neutral-50)',
-    // optionSelectedColor: 'var(--neutral-0)',
     colorText: 'var(--neutral-900)',
     borderRadius: 8,
     borderRadiusLG: 8,
@@ -89,8 +89,8 @@ export const componentTokens: OverrideToken = {
     textPaddingInline: 8
   },
   Input: {
-    activeBorderColor: 'var(--primary-500)',
-    hoverBorderColor: 'var(--primary-500)',
+    activeBorderColor: 'var(--neutral-600)',
+    hoverBorderColor: 'var(--neutral-500)',
     colorBorder: 'var(--neutral-300)',
     colorText: 'var(--neutral-900)',
     colorTextPlaceholder: 'var(--neutral-500)',
@@ -142,7 +142,8 @@ export const componentTokens: OverrideToken = {
   DatePicker: {
     activeBorderColor: 'var(--primary-500)',
     hoverBorderColor: 'var(--primary-500)',
-    colorBorder: 'var(--neutral-300)'
+    colorBorder: 'var(--neutral-300)',
+    colorBgElevated: 'var(--neutral-50)'
   },
   Dropdown: {
     colorBgElevated: 'var(--neutral-100)'

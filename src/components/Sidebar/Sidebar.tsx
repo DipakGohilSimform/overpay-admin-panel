@@ -37,12 +37,9 @@ const primaryMenuItems: MenuItem[] = [
     getItem(<Link to="/admin/transactions">Transactions</Link>, '5'),
     getItem(<Link to="/admin/recipients">Recipients</Link>, '6')
   ]),
-  getItem(<Link to="/admin/analytics">Analytics</Link>, '7', <Analytics />)
-]
-
-const secondaryMenuItems: MenuItem[] = [
+  getItem(<Link to="/admin/analytics">Analytics</Link>, '7', <Analytics />),
   getItem(<Link to="/admin/help">Get Help</Link>, '8', <Question />),
-  getItem(<Link to="/admin/settings">Settings</Link>, '9', <Settings />)
+  getItem(<Link to="/admin/account-setting">Settings</Link>, '9', <Settings />)
 ]
 
 export default function Sidebar() {
@@ -66,7 +63,7 @@ export default function Sidebar() {
         return '7'
       case '/help':
         return '8'
-      case '/settings':
+      case '/account-setting':
         return '9'
       default:
         return '1'
@@ -84,12 +81,6 @@ export default function Sidebar() {
           mode="inline"
           defaultSelectedKeys={[selectedKey]}
           items={primaryMenuItems}
-        />
-        <Menu
-          theme="dark"
-          mode="inline"
-          defaultSelectedKeys={[selectedKey]}
-          items={secondaryMenuItems}
         />
       </SidebarMenuStyles>
     </DashboardSiderStyles>
