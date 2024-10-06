@@ -16,7 +16,7 @@ export const ActionWrapper = styled.div`
       letter-spacing: 0.2px;
       &.ant-btn-default {
         color: var(--neutral-900);
-        background-color: var(--neutral-0);
+        background-color: var(--neutral-50);
       }
     }
     .anticon {

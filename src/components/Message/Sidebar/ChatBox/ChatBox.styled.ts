@@ -5,11 +5,11 @@ export const ChatBoxWrapper = styled.button`
   padding: 20px 40px;
   width: 100%;
   border: none;
-  background: var(--neutral-0);
+  background: var(--neutral-50);
   cursor: pointer;
   transition: all 0.3s ease;
   &:hover {
-    background: var(--neutral-50);
+    background: var(--neutral-100);
   }
   .profile {
     display: flex;

@@ -5,7 +5,7 @@ export const ContentFooter = styled.div`
   margin: 24px;
   .ant-input {
     resize: none;
-    background: var(--neutral-0);
+    background: var(--neutral-50);
   }
   .footer-cta-wrapper {
     display: flex;

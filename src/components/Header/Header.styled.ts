@@ -5,7 +5,6 @@ export const DashboardHeaderStyles = styled(Header)<{ scrolled: boolean }>`
   position: sticky;
   height: 94px;
   top: 0;
-  background-color: var(--neutral-0);
   display: flex;
   align-items: center;
   justify-content: space-between;

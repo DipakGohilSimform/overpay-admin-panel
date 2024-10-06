@@ -12,4 +12,16 @@ export const Form = styled(AntForm)`
   .ant-input-password {
     background-color: var(--neutral-0);
   }
+  .form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    margin-bottom: 32px;
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-select {
+      height: 56px;
+    }
+  }
 `
