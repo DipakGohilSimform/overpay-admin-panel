@@ -10,6 +10,22 @@ export const DatePicker = styled(AntDatePicker)`
   &:focus-within {
     box-shadow: none;
   }
+  &.ant-picker-outlined {
+    background-color: var(--neutral-50);
+    color: var(--neutral-900);
+    input {
+      &::placeholder {
+        color: var(--neutral-900);
+      }
+    }
+    &:hover {
+      border-color: var(--neutral-500);
+    }
+  }
+  .ant-picker-cell-in-view.ant-picker-cell-selected:not(.ant-picker-cell-disabled)
+    .ant-picker-cell-inner {
+    background-color: var(--primary-500);
+  }
   .ant-picker-input {
     .ant-picker-suffix {
       font-size: 24px;

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 export const Collapse = styled(AntCollapse)`
   border: none;
-  background-color: var(--neutral-0);
+  background-color: var(--neutral-10);
   .ant-collapse-header {
     padding-block: 10px;
     svg {
@@ -11,7 +11,7 @@ export const Collapse = styled(AntCollapse)`
     }
   }
   .ant-collapse-content {
-    background-color: var(--neutral-0);
+    background-color: var(--neutral-10);
     border: none;
   }
   .ant-collapse-expand-icon {

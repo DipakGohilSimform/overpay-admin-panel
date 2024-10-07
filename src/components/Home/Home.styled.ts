@@ -43,6 +43,9 @@ export const HomeWrapper = styled.div`
           color: var(--primary-500);
           background-color: var(--white);
           border: none;
+          span {
+            color: var(--primary-500);
+          }
           .ant-btn-icon {
             flex-shrink: 0;
             .anticon {

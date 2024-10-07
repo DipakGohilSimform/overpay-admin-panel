@@ -17,12 +17,15 @@ export const NotificationWrapper = styled(Dropdown)`
       height: 10px;
     }
     .ant-avatar {
-      background: var(--neutral-50);
+      background: var(--neutral-60);
       height: 48px;
       width: 48px;
       .anticon {
         font-size: 28px;
         color: var(--neutral-900);
+      }
+      &:hover {
+        background: var(--neutral-200);
       }
     }
   }

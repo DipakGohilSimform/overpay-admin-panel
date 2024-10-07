@@ -127,7 +127,12 @@ export default function HomeContent() {
         <BorderedContainer
           title="Recent Transactions"
           headingChildren={
-            <Button icon={<ChevronRight />} iconPosition="end" className="view-all-btn">
+            <Button
+              icon={<ChevronRight />}
+              iconPosition="end"
+              className="view-all-btn"
+              href="/admin/transactions"
+            >
               View all
             </Button>
           }

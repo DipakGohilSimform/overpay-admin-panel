@@ -6,6 +6,7 @@ export const AccountDetailsWrapper = styled.div`
   .account-sidebar {
     flex: 0 0 410px;
     padding: 40px;
+    border-right: 1px solid var(--neutral-200);
     .progress-container {
       background-color: var(--primary-500);
       border-radius: 16px;

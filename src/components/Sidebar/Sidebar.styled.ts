@@ -10,6 +10,9 @@ export const DashboardSiderStyles = styled(Sider)`
   align-self: flex-start;
   &.ant-layout-sider {
     position: sticky;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
   }
   .logoContainer {
     padding: 20px 57px 32px 13px;

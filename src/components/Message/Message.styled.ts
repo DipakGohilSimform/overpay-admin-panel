@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const MessageContainer = styled.div`
   display: flex;
-  height: calc(100vh - 136px);
+  height: calc(100vh - 150px);
   border-top: 1px solid var(--neutral-200);
   border-bottom: 0;
   .message-sidebar {
-    flex: 0 0 350px;
+    flex: 0 1 350px;
   }
   .message-content {
     display: flex;
@@ -17,6 +17,6 @@ export const MessageContainer = styled.div`
   }
   .user-details {
     flex: 0 0 300px;
-    overflow: auto;
+    overflow-y: auto;
   }
 `

@@ -29,7 +29,7 @@ export default function Profile() {
       key: '2'
     },
     {
-      label: <Link to="/invoices">Account Settings</Link>,
+      label: <Link to="account-setting">Account Settings</Link>,
       icon: <Settings />,
       key: '3'
     },

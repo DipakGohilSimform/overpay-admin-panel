@@ -3,9 +3,14 @@ import styled from 'styled-components'
 
 export const Input = styled(AntInput)`
   height: 56px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: var(--neutral-900);
   &.ant-input-outlined:focus,
   &.ant-input-outlined:focus-within {
-    border-color: var(--primary-500);
+    border-color: var(--neutral-500);
     box-shadow: none;
   }
   &::placeholder {

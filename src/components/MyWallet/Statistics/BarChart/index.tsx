@@ -79,7 +79,7 @@ export default function Chart() {
           {data.map((_entry, index) => (
             <Cell
               key={`cell-${index}`}
-              fill={focusBar === index ? 'var(--primary-500)' : 'var(--neutral-100)'}
+              fill={focusBar === index ? 'var(--primary-500)' : 'var(--neutral-350)'}
               onMouseEnter={() => setFocusBar(index)}
               onMouseLeave={() => setFocusBar(null)}
             />

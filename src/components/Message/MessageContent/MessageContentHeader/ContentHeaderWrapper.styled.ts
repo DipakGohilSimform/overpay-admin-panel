@@ -36,7 +36,7 @@ export const ContentHeaderWrapper = styled.div`
     }
     .ant-btn.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
       background-color: var(--neutral-50);
-      border-color: var(--neutral-50);
+      border-color: var(--neutral-200);
     }
     .cta-btn {
       border-radius: 50%;

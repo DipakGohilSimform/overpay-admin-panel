@@ -29,6 +29,7 @@ export const TotalDetailsWrapper = styled.div`
       font-weight: 500;
       line-height: 21px;
       letter-spacing: 0.2px;
+      color: var(--neutral-900);
       span {
         font-weight: 800;
       }
