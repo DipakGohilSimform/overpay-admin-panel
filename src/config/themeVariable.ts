@@ -6,7 +6,6 @@ export const globalTokens: Partial<AliasToken> = {
   controlOutline: 'var(--primary-200)',
   controlOutlineWidth: 1,
   borderRadius: 2,
-  colorText: 'var(--neutral-950)',
   colorPrimary: 'var(--primary-500)',
   colorPrimaryBg: 'var(--primary-50)',
   colorPrimaryBgHover: 'var(--primary-100)',
@@ -42,27 +41,29 @@ export const componentTokens: OverrideToken = {
     borderRadiusLG: 12,
     defaultBg: 'transparent',
     defaultHoverColor: 'var(--neutral-0)',
-    defaultHoverBorderColor: 'var(--neutral-500)'
+    defaultHoverBorderColor: 'var(--neutral-500)',
+    defaultHoverBg: 'transparent'
   },
   Select: {
     colorBorder: 'var(--neutral-300)',
     optionSelectedBg: 'var(--primary-500)',
     colorPrimaryBgHover: 'var(--primary-500)',
-    colorPrimaryBorderHover: 'var(--primary-500)',
-    colorFillTertiary: 'var(--neutral-50)',
+    colorPrimaryBorderHover: 'var(--neutral-500)',
+    colorFillTertiary: 'var(--neutral-10)',
     colorText: 'var(--neutral-900)',
     borderRadius: 8,
     borderRadiusLG: 8,
     borderRadiusSM: 4,
     optionPadding: '6px 8px',
-    colorBgContainer: 'var(--neutral-50)',
-    selectorBg: 'var(--neutral-50)',
-    colorBgElevated: 'var(--neutral-50)'
+    colorBgContainer: 'var(--neutral-10)',
+    selectorBg: 'var(--neutral-10)',
+    colorBgElevated: 'var(--neutral-10)',
+    optionSelectedColor: 'var(--white)'
   },
   Layout: {
     siderBg: 'var(--neutral-100)',
-    headerBg: 'var(--neutral-50)',
-    bodyBg: 'var(--neutral-50)',
+    headerBg: 'var(--neutral-10)',
+    bodyBg: 'var(--neutral-10)',
     triggerBg: 'var(--primary-500)'
   },
   Menu: {
@@ -70,7 +71,8 @@ export const componentTokens: OverrideToken = {
     itemBg: 'var(--neutral-100)',
     itemSelectedColor: 'var(--white)',
     itemSelectedBg: 'var(--primary-500)',
-    itemActiveBg: 'var(--neutral-200)'
+    itemActiveBg: 'var(--neutral-200)',
+    itemColor: 'var(--neutral-600)'
   },
   Modal: {
     borderRadiusLG: 16
@@ -99,7 +101,7 @@ export const componentTokens: OverrideToken = {
     paddingInline: 16,
     borderRadius: 12,
     activeShadow: 'none',
-    colorBgContainer: 'var(--neutral-50)'
+    colorBgContainer: 'var(--neutral-10)'
   },
   Checkbox: {
     colorBorder: 'var(--neutral-300)',

@@ -1,16 +1,14 @@
-import { User } from '../Icons'
 import { MenuWrapper } from './MenuWrapper'
 
 interface MenuProps {
   icon: React.ReactNode
   title: string
   desc: string
-  withArrow?: boolean
 }
 
-export default function Menu({ icon, title, desc, withArrow }: MenuProps) {
+export default function Menu({ icon, title, desc }: MenuProps) {
   return (
-    <MenuWrapper className={`${withArrow ? 'with-arrow' : ''}`}>
+    <MenuWrapper>
       <div className="account-details-tab">
         <div className="icon">{icon}</div>
         <div className="tab-desc">

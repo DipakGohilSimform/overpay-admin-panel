@@ -4,12 +4,15 @@ import { Dropdown } from '@/components/Ant'
 export const ProfileWrapper = styled(Dropdown)`
   display: flex;
   align-items: center;
-  background: var(--neutral-50);
+  background: var(--neutral-60);
   padding: 8px;
   border-radius: 72px;
   cursor: pointer;
   min-width: 163px;
   height: 48px;
+  &:hover {
+    background: var(--neutral-200);
+  }
   .user-name {
     display: flex;
     align-items: center;

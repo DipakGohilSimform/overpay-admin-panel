@@ -5,7 +5,7 @@ export const AuthNav = styled(Header)`
   display: flex;
   justify-content: space-between;
   width: 100%;
-  background: var(--neutral-900);
+  background: var(--neutral-950);
   position: fixed;
   top: 0;
   left: 0;

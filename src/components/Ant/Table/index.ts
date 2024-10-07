@@ -28,9 +28,8 @@ export const Table = styled(AntTable)`
     }
   }
   .ant-table-tbody > tr > td {
-    background-color: var(--neutral-50);
+    background-color: var(--neutral-10);
     border-bottom: 1px solid var(--neutral-200);
-
     &:hover {
       background-color: var(--neutral-100);
     }

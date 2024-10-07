@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Shield() {
+export function Shield() {
   return (
     <span className="anticon">
       <svg
@@ -16,7 +16,7 @@ export default function Shield() {
           strokeLinejoin="round"
           strokeWidth="1.5"
           d="M12 3a12 12 0 008.5 3A12.001 12.001 0 0112 21 12 12 0 013.5 6 12 12 0 0012 3"
-        ></path>
+        />
       </svg>
     </span>
   )

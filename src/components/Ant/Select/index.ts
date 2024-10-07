@@ -6,13 +6,13 @@ export const Select = styled(AntSelect)`
       .ant-select-customize-input
     ):not(.ant-pagination-size-changer) {
     .ant-select-selector {
-      border-color: var(--primary-500);
+      border-color: var(--neutral-500);
       box-shadow: none;
     }
   }
   &.ant-select-outlined:not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover {
     .ant-select-selector {
-      border-color: var(--primary-500);
+      border-color: var(--neutral-500);
     }
   }
   .ant-select-selector {

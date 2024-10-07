@@ -12,6 +12,7 @@ export const AuthStyles = styled.main<AuthStylesProps>`
   min-height: 100dvh;
   padding: 24px;
   position: relative;
+  background-color: var(--neutral-10);
   ${(props) =>
     props.isSignup
       ? `

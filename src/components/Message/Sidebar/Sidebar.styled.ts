@@ -6,7 +6,7 @@ export const MessageSidebar = styled.div`
   .sidebar-header {
     position: sticky;
     top: 0;
-    background-color: var(--neutral-50);
+    background-color: var(--neutral-10);
     z-index: 10;
     padding: 32px 40px;
   }

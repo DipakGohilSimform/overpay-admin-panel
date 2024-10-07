@@ -117,15 +117,16 @@ hr {
   margin-bottom: 24px;
 }
 .invoice-btn {
+  &.ant-btn-default{
     color: var(--primary-500);
     border: transparent;
-    background: var(--neutral-50);
+    background: var(--neutral-60);
     padding: 8px;
     min-width: 160px;
-
-    &:not(:disabled):not(.ant-btn-disabled):hover {
-      background: var(--neutral-250);
+    &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover{
+      background: var(--neutral-200);
     }
+  }
   }
   //for chart texts
   .chart-text{

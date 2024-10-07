@@ -1,7 +1,5 @@
 import { Button } from '@/components/Ant'
-import { Calendar, Card, ProgressIcon, User } from '@/components/Icons'
-import Lock from '@/components/Icons/Lock'
-import Shield from '@/components/Icons/Shield'
+import { Calendar, Card, Lock, ProgressIcon, Shield, User } from '@/components/Icons'
 import Menu from '@/components/Menu'
 
 export default function AccountSidebar() {

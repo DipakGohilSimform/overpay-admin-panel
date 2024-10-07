@@ -10,7 +10,7 @@ export const Input = styled(AntInput)`
   color: var(--neutral-900);
   &.ant-input-outlined:focus,
   &.ant-input-outlined:focus-within {
-    border-color: var(--primary-500);
+    border-color: var(--neutral-500);
     box-shadow: none;
   }
   &::placeholder {

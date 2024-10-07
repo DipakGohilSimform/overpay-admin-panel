@@ -27,7 +27,9 @@ interface ColorValues {
   'primary-900': string
   'primary-950': string
   'neutral-0': string
+  'neutral-10': string
   'neutral-50': string
+  'neutral-60': string
   'neutral-100': string
   'neutral-150': string
   'neutral-250': string
@@ -40,6 +42,7 @@ interface ColorValues {
   'neutral-700': string
   'neutral-800': string
   'neutral-900': string
+  'neutral-950': string
   'neutral-1000': string
 }
 
@@ -73,7 +76,9 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'primary-900': '130, 23, 52',
     'primary-950': '75, 7, 23',
     'neutral-0': '255, 255, 255',
+    'neutral-10': '255, 255, 255',
     'neutral-50': '250, 250, 250',
+    'neutral-60': '250, 250, 250',
     'neutral-100': '250, 250, 250',
     'neutral-150': '247, 250, 252',
     'neutral-200': '237, 242, 247',
@@ -86,6 +91,7 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'neutral-700': '51, 65, 85',
     'neutral-800': '30, 41, 59',
     'neutral-900': '26, 32, 44',
+    'neutral-950': '26, 32, 44',
     'neutral-1000': '0, 0, 0'
   },
   dark: {
@@ -115,7 +121,9 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'primary-900': '254, 230, 231',
     'primary-950': '255, 240, 240',
     'neutral-0': '0, 0, 0',
+    'neutral-10': '26, 32, 44',
     'neutral-50': '26, 32, 44',
+    'neutral-60': '35, 43, 56',
     'neutral-100': '35, 43, 56',
     'neutral-150': '35, 43, 56',
     'neutral-200': '42, 49, 60',
@@ -128,6 +136,7 @@ export const themes: Record<'default' | 'dark', ColorValues> = {
     'neutral-700': '203, 213, 225',
     'neutral-800': '226, 232, 240',
     'neutral-900': '250, 250, 250',
+    'neutral-950': '35, 43, 56',
     'neutral-1000': '255, 255, 255',
     blue: '232, 237, 255',
     pink: '255, 236, 229'
