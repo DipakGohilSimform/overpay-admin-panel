@@ -1,17 +1,7 @@
-// import { Search } from '@/components/Icons'
-// import { SearchButtonWrapper } from './SearchButton.styled'
-
-// export default function SearchButton() {
-//   return (
-//     <SearchButtonWrapper>
-//       <Search />
-//     </SearchButtonWrapper>
-//   )
-// }
-
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import { Search } from '@/components/Icons'
 import { SearchButtonWrapper } from './SearchButton.styled'
+import { Button } from '@/components/Ant'
 
 export default function SearchButton() {
   const [isActive, setIsActive] = useState(false)
@@ -21,19 +11,19 @@ export default function SearchButton() {
   }
 
   // Close the search input when clicking outside
-  useEffect(() => {
-    const handleClickOutside = (e) => {
-      const searchWrapper = document.querySelector('.search')
-      if (searchWrapper && !searchWrapper.contains(e.target)) {
-        setIsActive(false)
-      }
-    }
+  // useEffect(() => {
+  //   const handleClickOutside = (e: { target: Node | null }) => {
+  //     const searchWrapper = document.querySelector('.search')
+  //     if (searchWrapper && !searchWrapper.contains(e.target)) {
+  //       setIsActive(false)
+  //     }
+  //   }
 
-    document.addEventListener('click', handleClickOutside)
-    return () => {
-      document.removeEventListener('click', handleClickOutside)
-    }
-  }, [])
+  //   document.addEventListener('click', handleClickOutside)
+  //   return () => {
+  //     document.removeEventListener('click', handleClickOutside)
+  //   }
+  // }, [])
 
   return (
     <SearchButtonWrapper className={`search ${isActive ? 'active' : ''}`}>
@@ -45,9 +35,9 @@ export default function SearchButton() {
           style={{ width: isActive ? '300px' : '40px' }}
         />
       </div>
-      <div className="search__button" onClick={handleToggle}>
+      <Button className="search__button" onClick={handleToggle}>
         <Search />
-      </div>
+      </Button>
     </SearchButtonWrapper>
   )
 }
