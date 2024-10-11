@@ -1,10 +1,19 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import type { MenuProps } from 'antd'
 import { DashboardSiderStyles, SidebarMenuStyles } from './Sidebar.styled'
-import { Activity, Card, Dashboard, Invoice, Message, Question, Settings } from '../Icons'
-import { Menu } from '../Ant'
+import {
+  Activity,
+  Card,
+  Dashboard,
+  Hamburger,
+  Invoice,
+  Message,
+  Question,
+  Settings
+} from '../Icons'
+import { Button, Menu } from '../Ant'
 import { Logo } from '../Logo/Logo'
 
 type MenuItem = Required<MenuProps>['items'][number]
@@ -37,6 +46,7 @@ const primaryMenuItems: MenuItem[] = [
 ]
 
 export default function Sidebar() {
+  const [collapsed, setCollapsed] = useState(false)
   const location = useLocation()
   const currentPath: string = location.pathname
 
@@ -61,9 +71,15 @@ export default function Sidebar() {
       ?.key?.toString() || '1'
 
   return (
-    <DashboardSiderStyles width={250}>
+    <DashboardSiderStyles width={250} collapsed={collapsed} collapsedWidth="40" breakpoint="lg">
       <div className="logoContainer">
-        <Logo color="dark-dark" />
+        <Logo color="dark-dark" link="/admin/dashboard" />
+        <Button
+          type="text"
+          icon={<Hamburger />}
+          className="hamburger-close"
+          onClick={() => setCollapsed(!collapsed)}
+        />
       </div>
       <SidebarMenuStyles>
         <Menu theme="dark" mode="inline" selectedKeys={[activeKey]} items={primaryMenuItems} />

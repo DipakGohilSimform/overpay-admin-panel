@@ -1,8 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { useState } from 'react'
+import { TableRowSelection } from 'antd/es/table/interface'
+import { TableProps } from 'antd'
 import { Sort } from '@/components/Icons'
 import NameContent from '@/components/Table/NameContent'
-import { Checkbox } from '@/components/Ant'
+// import { Checkbox } from '@/components/Ant'
 import Data from '@/components/Table/Data'
 import Amount from '@/components/Table/Amount'
 import Status from '@/components/Table/Status'
@@ -165,17 +168,23 @@ const data: DataType[] = [
 ]
 
 export default function InvoiceListing() {
-  const rowSelection = {
-    renderCell: () => {
-      return <Checkbox />
-    }
+  // const rowSelection = {
+  //   renderCell: () => {
+  //     // return <Checkbox />
+  //   }
+  // }
+  const rowSelection: TableProps<DataType>['rowSelection'] = {
+    getCheckboxProps: (record: DataType) => ({
+      disabled: record.name === 'Disabled User', // Column configuration not to be checked
+      name: record.name
+    })
   }
   return (
     <InvoiceListingTable
+      rowSelection={rowSelection}
       pagination={false}
       columns={columns}
       dataSource={data}
-      rowSelection={rowSelection}
     />
   )
 }

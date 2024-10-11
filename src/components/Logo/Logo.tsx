@@ -1,32 +1,41 @@
+/* eslint-disable react/require-default-props */
+import { Link } from 'react-router-dom'
 import { LightLightLogo, DarkLightLogo, DarkDarkLogo } from './Logo.styled'
 
 export interface LogoProps {
   color: 'light-light' | 'dark-light' | 'dark-dark'
+  link?: string
 }
 
 export function Logo(props: LogoProps) {
-  const { color } = props
+  const { color, link = '#' } = props
   if (color === 'light-light') {
     return (
-      <LightLightLogo>
-        <img src="/images/logo-light.png" alt="Overpay Logo" />
-        <span>Overpay.</span>
-      </LightLightLogo>
+      <Link to={link}>
+        <LightLightLogo>
+          <img src="/images/logo-light.png" alt="Overpay Logo" />
+          <span>Overpay.</span>
+        </LightLightLogo>
+      </Link>
     )
   }
   if (color === 'dark-light') {
     return (
-      <DarkLightLogo>
-        <img src="/images/logo-dark.png" alt="Overpay Logo" />
-        <span>Overpay.</span>
-      </DarkLightLogo>
+      <Link to={link}>
+        <DarkLightLogo>
+          <img src="/images/logo-dark.png" alt="Overpay Logo" />
+          <span>Overpay.</span>
+        </DarkLightLogo>
+      </Link>
     )
   }
 
   return (
-    <DarkDarkLogo>
-      <img src="/images/logo-dark.png" alt="Overpay Logo" />
-      <span>Overpay.</span>
-    </DarkDarkLogo>
+    <Link to={link}>
+      <DarkDarkLogo>
+        <img src="/images/logo-dark.png" alt="Overpay Logo" />
+        <span>Overpay.</span>
+      </DarkDarkLogo>
+    </Link>
   )
 }

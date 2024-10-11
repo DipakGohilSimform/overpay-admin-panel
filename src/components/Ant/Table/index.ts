@@ -34,4 +34,11 @@ export const Table = styled(AntTable)`
       background-color: var(--neutral-100);
     }
   }
+  .ant-checkbox-checked .ant-checkbox-inner:after {
+    top: 48%;
+    inset-inline-start: 35%;
+    display: table;
+    width: 6px;
+    height: 10px;
+  }
 `
