@@ -1,6 +1,8 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const SearchButtonWrapper = styled.button`
+  height: 45px;
   &.search {
     position: relative;
     max-width: 400px;
@@ -19,7 +21,7 @@ export const SearchButtonWrapper = styled.button`
       background: var(--neutral-200);
     }
   }
-  .search__field {
+  .search-field {
     position: relative;
     width: 40px;
     height: 45px;
@@ -27,12 +29,12 @@ export const SearchButtonWrapper = styled.button`
     overflow: hidden;
   }
 
-  &.search.active .search__field {
+  &.search.active .search-field {
     width: 300px !important;
     border-width: 2px;
   }
 
-  .search__input {
+  .search-input {
     position: absolute;
     inset: 0;
     width: 100%;
@@ -41,14 +43,15 @@ export const SearchButtonWrapper = styled.button`
     font-size: 16px;
     font-weight: 700;
     color: var(--neutral-900);
-    background-color: transparent;
+    background: transparent;
+    border-radius: 20px;
     border: none;
     outline: none;
     opacity: 0;
     transition: width 0.3s ease;
   }
 
-  &.search.active .search__input {
+  &.search.active .search-input {
     opacity: 1;
   }
 
@@ -59,7 +62,7 @@ export const SearchButtonWrapper = styled.button`
     }
   }
 
-  .search__button {
+  .search-button {
     position: absolute;
     top: 50%;
     right: 5px;
@@ -73,8 +76,19 @@ export const SearchButtonWrapper = styled.button`
     cursor: pointer;
     transform: translateY(-50%);
     transition: 0.3s;
+    padding: 0;
+    border: none;
+    outline: none;
+    &.search-button {
+      &:active {
+        background: var(--neutral-60);
+      }
+    }
+    @media ${breakpointsDown.lg} {
+      pointer-events: none;
+    }
   }
-  &.search.active .search__button {
+  &.search.active .search-button {
     right: 10px;
   }
 `

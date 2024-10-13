@@ -1,3 +1,4 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const HelpSidebarContainer = styled.div`
@@ -55,5 +56,12 @@ export const HelpSidebarContainer = styled.div`
         }
       }
     }
+  }
+  @media ${breakpointsDown.lg} {
+    flex: 1 1 auto;
+    height: unset;
+    border: none;
+    padding-bottom: 0;
+    padding-right: 0;
   }
 `

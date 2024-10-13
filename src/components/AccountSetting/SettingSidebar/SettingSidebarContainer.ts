@@ -1,3 +1,4 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const SettingSidebarContainer = styled.div`
@@ -20,5 +21,12 @@ export const SettingSidebarContainer = styled.div`
       flex-direction: column;
       margin-bottom: 40px;
     }
+  }
+  @media ${breakpointsDown.lg} {
+    flex: 1 1 auto;
+    height: unset;
+    border: none;
+    padding-bottom: 0;
+    margin-inline: -40px;
   }
 `

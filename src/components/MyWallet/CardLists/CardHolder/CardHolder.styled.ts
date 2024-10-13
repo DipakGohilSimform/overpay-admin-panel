@@ -24,11 +24,18 @@ export const CardContainer = styled.div`
     }
   }
   .ant-btn {
-    color: var(--primary-500);
-    border-color: var(--primary-500);
-    &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
-      background: var(--primary-500);
-      color: var(--neutral-0);
+    &.ant-btn {
+      span {
+        color: var(--primary-500);
+      }
+      border-color: var(--primary-500);
+      &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+        span {
+          color: var(--white);
+        }
+        background: var(--primary-500);
+        color: var(--neutral-0);
+      }
     }
   }
 `

@@ -1,3 +1,4 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const HelpContentContainer = styled.div`
@@ -18,5 +19,11 @@ export const HelpContentContainer = styled.div`
     letter-spacing: 0.2px;
     color: var(--neutral-600);
     margin-bottom: 48px;
+  }
+  @media ${breakpointsDown.lg} {
+    flex: 1 1 auto;
+    height: unset;
+    border: none;
+    padding: 0;
   }
 `

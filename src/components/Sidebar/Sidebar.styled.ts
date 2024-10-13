@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Menu, Sider } from '@/components/Ant'
+import { breakpointsDown } from '@/config/variables'
 
 export const DashboardSiderStyles = styled(Sider)`
   top: 0;
@@ -11,13 +12,36 @@ export const DashboardSiderStyles = styled(Sider)`
   &.ant-layout-sider {
     position: sticky;
     top: 0;
+    left: 0;
     bottom: 0;
     overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 1000;
+    @media ${breakpointsDown.lg} {
+      position: fixed;
+    }
   }
   .logoContainer {
     padding: 20px 57px 32px 13px;
     border-bottom: 1px solid var(--neutral-300);
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    @media ${breakpointsDown.lg} {
+      padding: 20px;
+    }
+    .ant-btn {
+      display: none;
+      @media ${breakpointsDown.lg} {
+        display: inline-block;
+        flex: 1 0 23px;
+        position: relative;
+        top: 1px;
+        left: 10px;
+      }
+    }
   }
 `
 export const SidebarMenuStyles = styled(Menu)`

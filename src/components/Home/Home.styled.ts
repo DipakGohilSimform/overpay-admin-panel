@@ -1,10 +1,12 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const HomeWrapper = styled.div`
   display: flex;
   gap: 32px;
   .graph-container {
-    flex: 0 1 100%;
+    flex: 0 1 auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -86,6 +88,7 @@ export const HomeWrapper = styled.div`
     }
     .data-info {
       display: flex;
+      flex-wrap: wrap;
       gap: 24px;
       .tag-wrapper {
         display: flex;
@@ -119,6 +122,9 @@ export const HomeWrapper = styled.div`
         line-height: 18px;
         letter-spacing: 0.4;
         color: var(--neutral-900);
+      }
+      @media ${breakpointsDown.md} {
+        gap: 20px;
       }
     }
     .recent-transactions {
@@ -212,6 +218,19 @@ export const HomeWrapper = styled.div`
           background: var(--blue);
         }
       }
+    }
+  }
+  @media ${breakpointsDown.xl} {
+    flex-wrap: wrap;
+    .card-container {
+      flex: 1 1 auto;
+      flex-direction: row;
+    }
+  }
+  @media ${breakpointsDown.lg} {
+    flex-wrap: wrap;
+    .card-container {
+      flex-wrap: wrap;
     }
   }
 `

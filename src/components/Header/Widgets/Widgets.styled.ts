@@ -1,3 +1,4 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const WidgetsContainer = styled.div`
@@ -84,6 +85,9 @@ export const WidgetsContainer = styled.div`
           }
         }
       }
+      @media ${breakpointsDown.lg} {
+        width: unset;
+      }
     }
     .notification-wrapper {
       .notification {
@@ -134,6 +138,9 @@ export const WidgetsContainer = styled.div`
           margin-bottom: 0;
         }
       }
+    }
+    @media ${breakpointsDown.lg} {
+      max-width: 360px;
     }
   }
 `

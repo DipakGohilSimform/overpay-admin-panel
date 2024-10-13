@@ -9,6 +9,9 @@ export const DashboardLayoutStyles = styled(Layout)`
       padding: 16px 40px 40px 40px;
     }
   }
+  .ant-layout-sider-collapsed {
+    padding: 0;
+  }
 `
 
 export const DashboardContentStyles = styled(Content)`

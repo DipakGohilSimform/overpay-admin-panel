@@ -21,6 +21,7 @@ export const Select = styled(AntSelect)`
       font-weight: 600;
       line-height: 21px;
       letter-spacing: 0.2px;
+      color: var(--neutral-900);
     }
   }
   .ant-select-dropdown {

@@ -1,3 +1,4 @@
+import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
 
 export const SettingContentContainer = styled.div`
@@ -25,5 +26,12 @@ export const SettingContentContainer = styled.div`
       display: flex;
       justify-content: flex-end;
     }
+  }
+  @media ${breakpointsDown.lg} {
+    flex: 1 1 auto;
+    height: unset;
+    border: none;
+    padding: 40px;
+    margin-inline: -40px;
   }
 `

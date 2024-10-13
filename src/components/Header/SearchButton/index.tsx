@@ -27,15 +27,15 @@ export default function SearchButton() {
 
   return (
     <SearchButtonWrapper className={`search ${isActive ? 'active' : ''}`}>
-      <div className="search__field">
+      <div className="search-field">
         <input
           type="text"
-          className="search__input"
+          className="search-input"
           placeholder="Search..."
           style={{ width: isActive ? '300px' : '40px' }}
         />
       </div>
-      <Button className="search__button" onClick={handleToggle}>
+      <Button className="search-button" onClick={handleToggle}>
         <Search />
       </Button>
     </SearchButtonWrapper>

@@ -3,8 +3,10 @@ import { Layout } from '@/components/Ant'
 import { DashboardContentStyles, DashboardLayoutStyles } from './dashboard.styles'
 import Sidebar from '@/components/Sidebar/Sidebar'
 import Header from '@/components/Header/Header'
+import { useState } from 'react'
 
 export default function DashboardLayout() {
+  const [collapsed, setCollapsed] = useState(false)
   const location = useLocation()
 
   const currentRoute = location.pathname.split('/').pop()
@@ -34,9 +36,11 @@ export default function DashboardLayout() {
 
   return (
     <DashboardLayoutStyles>
-      <Sidebar />
+      <Sidebar setCollapsed={setCollapsed} collapsed={collapsed} />
       <Layout>
-        {!hideHeaderRoutes.includes(location.pathname) && <Header title={title} />}
+        {!hideHeaderRoutes.includes(location.pathname) && (
+          <Header title={title} setCollapsed={setCollapsed} collapsed={collapsed} />
+        )}
         <DashboardContentStyles>
           <Outlet />
         </DashboardContentStyles>
