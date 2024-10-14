@@ -1,5 +1,5 @@
-import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const ParentWrapper = styled.div`
   padding: 24px;

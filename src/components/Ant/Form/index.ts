@@ -1,6 +1,6 @@
-import { breakpointsDown } from '@/config/variables'
 import { Form as AntForm } from 'antd'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const Form = styled(AntForm)`
   &.ant-form-vertical .ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-label,
