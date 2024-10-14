@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const InvoiceContainer = styled.div``
 export const CreateContent = styled.div`
@@ -33,6 +34,9 @@ export const CreateContent = styled.div`
             }
           }
         }
+      }
+      @media ${breakpointsDown.sm} {
+        display: none;
       }
     }
   }
@@ -71,5 +75,11 @@ export const CreateContent = styled.div`
       gap: 16px;
       margin-top: 16px;
     }
+    @media ${breakpointsDown.lg} {
+      flex: 1 1 auto;
+    }
+  }
+  @media ${breakpointsDown.lg} {
+    flex-wrap: wrap;
   }
 `

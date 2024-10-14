@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Dropdown } from '@/components/Ant'
+import { breakpointsDown } from '@/config/variables'
 
 export const ProfileWrapper = styled(Dropdown)`
   display: flex;
@@ -29,5 +30,12 @@ export const ProfileWrapper = styled(Dropdown)`
   }
   .anticon {
     color: var(--neutral-600);
+  }
+  @media ${breakpointsDown.md} {
+    min-width: unset;
+    .name,
+    .anticon {
+      display: none;
+    }
   }
 `

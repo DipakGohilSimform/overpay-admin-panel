@@ -15,7 +15,8 @@ export const globalTokens: Partial<AliasToken> = {
   colorPrimaryActive: 'var(--primary-600)',
   colorPrimaryTextHover: 'var(--primary-400)',
   colorPrimaryText: 'var(--primary-500)',
-  colorPrimaryTextActive: 'var(--primary-600)'
+  colorPrimaryTextActive: 'var(--primary-600)',
+  colorText: 'var(--neutral-900)'
 }
 
 export const componentTokens: OverrideToken = {
@@ -145,7 +146,8 @@ export const componentTokens: OverrideToken = {
     activeBorderColor: 'var(--primary-500)',
     hoverBorderColor: 'var(--primary-500)',
     colorBorder: 'var(--neutral-300)',
-    colorBgElevated: 'var(--neutral-50)'
+    colorBgElevated: 'var(--neutral-50)',
+    colorBgTextActive: 'var(--neutral-900)'
   },
   Dropdown: {
     colorBgElevated: 'var(--neutral-100)'

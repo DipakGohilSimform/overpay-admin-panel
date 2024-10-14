@@ -35,7 +35,7 @@ function PaymentModal(props: ModalProps) {
               <ModalArrowRight />
             </Flex>
           </Flex>
-          <Flex gap={24} align="center">
+          <Flex wrap gap={24} align="center">
             <ProfileCard img="/images/avatar1.png" text="Francene" />
             <ProfileCard img="/images/avatar1.png" text="Francene" />
             <ProfileCard img="/images/avatar2.png" text="Cyndy. L" />

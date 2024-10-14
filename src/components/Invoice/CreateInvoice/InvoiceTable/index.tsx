@@ -71,6 +71,12 @@ const data: DataType[] = [
 
 export default function InvoiceTable() {
   return (
-    <Table columns={columns} dataSource={data} pagination={false} className="invoice-items-table" />
+    <Table
+      columns={columns}
+      dataSource={data}
+      pagination={false}
+      className="invoice-items-table"
+      // scroll={{ x: 500 }}
+    />
   )
 }

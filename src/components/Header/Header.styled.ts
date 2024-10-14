@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { Header } from '@/components/Ant'
+import { breakpointsDown } from '@/config/variables'
 
 export const DashboardHeaderStyles = styled(Header)<{ scrolled: boolean }>`
   position: sticky;
@@ -10,11 +11,32 @@ export const DashboardHeaderStyles = styled(Header)<{ scrolled: boolean }>`
   justify-content: space-between;
   padding: 40px;
   z-index: 999;
+  @media ${breakpointsDown.md} {
+    padding: 12px 24px;
+  }
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .hamburger-close {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      color: var(--neutral-900);
+      background: var(--neutral-60);
+      &:hover {
+        color: var(--neutral-900);
+      }
+    }
+  }
   h2 {
     font-size: 24px;
     font-weight: 800;
     color: var(--neutral-900);
     line-height: 32px;
+    @media ${breakpointsDown.md} {
+      display: none;
+    }
   }
 
   ${({ scrolled }) =>

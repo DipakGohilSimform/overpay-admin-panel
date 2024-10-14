@@ -5,6 +5,7 @@ import { Table as AntTable } from 'antd'
 export const Table = styled(AntTable)`
   .ant-table-container {
     .ant-table-content {
+      overflow-x: auto;
       .ant-table-thead {
         & > tr {
           & > th {
@@ -33,5 +34,15 @@ export const Table = styled(AntTable)`
     &:hover {
       background-color: var(--neutral-100);
     }
+  }
+  .ant-checkbox-checked .ant-checkbox-inner:after {
+    top: 48%;
+    inset-inline-start: 35%;
+    display: table;
+    width: 6px;
+    height: 10px;
+  }
+  &.ant-table-wrapper .ant-table-thead th.ant-table-column-sort {
+    background-color: var(--neutral-10);
   }
 `

@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const BalanceContainer = styled.div`
   border-radius: 16px;
@@ -35,6 +36,9 @@ export const BalanceContainer = styled.div`
       line-height: 27px;
       letter-spacing: 0.2px;
       color: var(--neutral-600);
+    }
+    @media ${breakpointsDown.lg} {
+      font-size: 35px;
     }
   }
   .balance-dated {

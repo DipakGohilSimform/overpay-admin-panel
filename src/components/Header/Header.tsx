@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react'
 import { DashboardHeaderStyles } from './Header.styled'
 import Widgets from './Widgets'
+import { Button } from '../Ant'
+import { Hamburger } from '../Icons'
 
 export interface HeaderProps {
   title: string
+  setCollapsed: (collapsed: boolean) => void
+  collapsed: boolean
 }
 
-export default function Header({ title }: HeaderProps) {
+export default function Header({ title, setCollapsed, collapsed }: HeaderProps) {
   const [scrolled, setScrolled] = useState(false)
 
   useEffect(() => {
@@ -27,7 +31,15 @@ export default function Header({ title }: HeaderProps) {
   }, [])
   return (
     <DashboardHeaderStyles scrolled={scrolled}>
-      <h2>{title}</h2>
+      <div className="left">
+        <Button
+          type="text"
+          icon={<Hamburger />}
+          className="hamburger-close"
+          onClick={() => setCollapsed(!collapsed)}
+        />
+        <h2>{title}</h2>
+      </div>
       <Widgets />
     </DashboardHeaderStyles>
   )

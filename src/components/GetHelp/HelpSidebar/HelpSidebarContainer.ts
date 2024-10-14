@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const HelpSidebarContainer = styled.div`
   flex: 0 0 440px;
@@ -41,6 +42,7 @@ export const HelpSidebarContainer = styled.div`
       }
       .tag-wrapper {
         display: flex;
+        flex-wrap: wrap;
         gap: 12px;
         align-items: center;
         .tag {
@@ -55,5 +57,12 @@ export const HelpSidebarContainer = styled.div`
         }
       }
     }
+  }
+  @media ${breakpointsDown.lg} {
+    flex: 1 1 auto;
+    height: unset;
+    border: none;
+    padding-bottom: 0;
+    padding-right: 0;
   }
 `

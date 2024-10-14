@@ -2,8 +2,10 @@ import styled from 'styled-components'
 
 export const ActionWrapper = styled.div`
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 16px;
   margin-bottom: 32px;
 
   .actions-btn-container {

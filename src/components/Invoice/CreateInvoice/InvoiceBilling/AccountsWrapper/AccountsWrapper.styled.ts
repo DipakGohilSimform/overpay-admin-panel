@@ -1,8 +1,12 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const AccountDetailContainer = styled.div`
   display: flex;
   gap: 40px;
+  @media ${breakpointsDown.md} {
+    flex-wrap: wrap;
+  }
 `
 export const DetailWrapper = styled.div`
   width: 100%;

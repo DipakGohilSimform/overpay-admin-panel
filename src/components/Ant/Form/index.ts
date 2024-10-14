@@ -1,5 +1,6 @@
 import { Form as AntForm } from 'antd'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const Form = styled(AntForm)`
   &.ant-form-vertical .ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-label,
@@ -22,6 +23,9 @@ export const Form = styled(AntForm)`
     }
     .ant-select {
       height: 56px;
+    }
+    @media ${breakpointsDown.md} {
+      grid-template-columns: 1fr;
     }
   }
 `

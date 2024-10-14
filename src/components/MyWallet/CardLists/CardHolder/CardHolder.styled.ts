@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const CardContainer = styled.div`
   display: flex;
@@ -24,11 +25,32 @@ export const CardContainer = styled.div`
     }
   }
   .ant-btn {
-    color: var(--primary-500);
-    border-color: var(--primary-500);
-    &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
-      background: var(--primary-500);
-      color: var(--neutral-0);
+    &.ant-btn {
+      span {
+        color: var(--primary-500);
+      }
+      border-color: var(--primary-500);
+      &.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+        span {
+          color: var(--white);
+        }
+        background: var(--primary-500);
+        color: var(--neutral-0);
+      }
     }
+  }
+  .card-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media ${breakpointsDown.sm} {
+      flex-direction: column;
+    }
+    @media ${breakpointsDown.sm} {
+      flex-wrap: wrap;
+    }
+  }
+  @media ${breakpointsDown.md} {
+    margin-bottom: 20px;
   }
 `

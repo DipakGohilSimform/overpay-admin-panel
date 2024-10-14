@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const AccountDetailsWrapper = styled.div`
   display: flex;
@@ -75,6 +76,9 @@ export const AccountDetailsWrapper = styled.div`
           line-height: 18px;
           letter-spacing: 0.4px;
           color: var(--neutral-600);
+        }
+        @media ${breakpointsDown.md} {
+          padding: 20px;
         }
       }
     }

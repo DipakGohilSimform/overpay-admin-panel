@@ -142,6 +142,7 @@ export default function HomeContent() {
             dataSource={data}
             pagination={false}
             className="recent-transactions"
+            // scroll={{ x: 500 }}
           />
         </BorderedContainer>
       </div>
