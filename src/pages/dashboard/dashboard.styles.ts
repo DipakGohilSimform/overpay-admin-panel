@@ -1,7 +1,9 @@
 import styled from 'styled-components'
 import { Content, Layout } from '@/components/Ant'
+import { breakpointsDown } from '@/config/variables'
 
 export const DashboardLayoutStyles = styled(Layout)`
+  position: relative;
   min-height: 100vh;
   min-height: 100dvh;
   .ant-layout {
@@ -11,6 +13,18 @@ export const DashboardLayoutStyles = styled(Layout)`
   }
   .ant-layout-sider-collapsed {
     padding: 0;
+  }
+  @media ${breakpointsDown.lg} {
+    .sider-mask {
+      position: fixed;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      background: rgba(0, 0, 0, 0.4);
+      z-index: 1000;
+      cursor: pointer;
+    }
   }
 `
 

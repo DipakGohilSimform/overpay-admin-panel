@@ -16,7 +16,7 @@ export const DashboardSiderStyles = styled(Sider)`
     bottom: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    z-index: 1000;
+    z-index: 1001;
     @media ${breakpointsDown.lg} {
       position: fixed;
     }
@@ -30,7 +30,8 @@ export const DashboardSiderStyles = styled(Sider)`
     align-items: center;
     gap: 5px;
     @media ${breakpointsDown.lg} {
-      padding: 20px;
+      padding: 0;
+      padding-bottom: 20px;
     }
     .ant-btn {
       display: none;

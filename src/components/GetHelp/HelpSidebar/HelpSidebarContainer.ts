@@ -42,6 +42,7 @@ export const HelpSidebarContainer = styled.div`
       }
       .tag-wrapper {
         display: flex;
+        flex-wrap: wrap;
         gap: 12px;
         align-items: center;
         .tag {

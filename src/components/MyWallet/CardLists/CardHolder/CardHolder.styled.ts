@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const CardContainer = styled.div`
   display: flex;
@@ -37,5 +38,19 @@ export const CardContainer = styled.div`
         color: var(--neutral-0);
       }
     }
+  }
+  .card-wrapper {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media ${breakpointsDown.sm} {
+      flex-direction: column;
+    }
+    @media ${breakpointsDown.sm} {
+      flex-wrap: wrap;
+    }
+  }
+  @media ${breakpointsDown.md} {
+    margin-bottom: 20px;
   }
 `

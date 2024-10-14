@@ -1,5 +1,5 @@
-import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const HomeWrapper = styled.div`
   display: flex;
@@ -219,6 +219,9 @@ export const HomeWrapper = styled.div`
         }
       }
     }
+    @media ${breakpointsDown.xxl} {
+      flex: 0 1 365px;
+    }
   }
   @media ${breakpointsDown.xl} {
     flex-wrap: wrap;
@@ -227,6 +230,7 @@ export const HomeWrapper = styled.div`
       flex-direction: row;
     }
   }
+
   @media ${breakpointsDown.lg} {
     flex-wrap: wrap;
     .card-container {

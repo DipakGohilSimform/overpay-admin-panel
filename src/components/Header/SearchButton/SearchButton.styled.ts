@@ -1,5 +1,5 @@
-import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const SearchButtonWrapper = styled.button`
   height: 45px;
@@ -32,6 +32,9 @@ export const SearchButtonWrapper = styled.button`
   &.search.active .search-field {
     width: 300px !important;
     border-width: 2px;
+    @media ${breakpointsDown.sm} {
+      width: 135px !important;
+    }
   }
 
   .search-input {
@@ -49,6 +52,9 @@ export const SearchButtonWrapper = styled.button`
     outline: none;
     opacity: 0;
     transition: width 0.3s ease;
+    @media ${breakpointsDown.sm} {
+      width: 100px !important;
+    }
   }
 
   &.search.active .search-input {
@@ -83,9 +89,6 @@ export const SearchButtonWrapper = styled.button`
       &:active {
         background: var(--neutral-60);
       }
-    }
-    @media ${breakpointsDown.lg} {
-      pointer-events: none;
     }
   }
   &.search.active .search-button {

@@ -39,7 +39,8 @@ const columns = [
     key: 'date',
     render: (_: any, record: any) => <DateWithTime date={record.date} time={record.time} />,
     sorter: (a: any, b: any) => a.date - b.date,
-    sortIcon: (_props: { sortOrder: any }) => <Sort />
+    sortIcon: (_props: { sortOrder: any }) => <Sort />,
+    width: 300
   },
   {
     title: 'Invoice ID',

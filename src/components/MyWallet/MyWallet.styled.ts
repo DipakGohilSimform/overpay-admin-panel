@@ -1,6 +1,6 @@
-import { breakpointsDown } from '@/config/variables'
 import { Flex } from 'antd'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const WalletContainer = styled.div`
   display: flex;
@@ -12,7 +12,6 @@ export const WalletContainer = styled.div`
     flex: 1 1 auto;
   }
   @media ${breakpointsDown.lg} {
-    flex-wrap: wrap;
     flex-direction: column-reverse;
   }
 `

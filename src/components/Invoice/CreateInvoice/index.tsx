@@ -1,6 +1,5 @@
 import BorderedContainer from '@/components/Home/BorderedContainer'
 import { CreateContent, InvoiceContainer } from './CreateInvoice.styled'
-import InvoiceHeader from './InvoiceHeader'
 import InvoiceInput from './InvoiceInput'
 import { Button, Divider } from '@/components/Ant'
 import { EyeOpen, File } from '@/components/Icons'
@@ -11,7 +10,6 @@ import TotalDetails from './TotalDetails'
 export default function CreateInvoice() {
   return (
     <InvoiceContainer>
-      <InvoiceHeader />
       <CreateContent>
         <div className="invoice-items">
           <BillingDetails />

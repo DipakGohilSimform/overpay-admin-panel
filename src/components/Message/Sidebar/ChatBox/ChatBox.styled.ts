@@ -10,6 +10,16 @@ export const ChatBoxWrapper = styled.button`
   transition: all 0.3s ease;
   &:hover {
     background: var(--neutral-100);
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      height: 100%;
+      width: 3px;
+      background-color: var(--primary-500);
+    }
   }
   .profile {
     display: flex;

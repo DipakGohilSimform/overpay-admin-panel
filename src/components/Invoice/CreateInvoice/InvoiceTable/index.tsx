@@ -76,7 +76,7 @@ export default function InvoiceTable() {
       dataSource={data}
       pagination={false}
       className="invoice-items-table"
-      scroll={{ x: 1500 }}
+      // scroll={{ x: 500 }}
     />
   )
 }

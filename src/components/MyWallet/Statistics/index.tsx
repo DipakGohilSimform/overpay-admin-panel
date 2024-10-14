@@ -16,7 +16,7 @@ export default function Statistics() {
         className="mb-24"
         title="Statistics"
         headingChildren={
-          <Flex align="center" gap={32}>
+          <Flex wrap align="center" gap={32}>
             <Flex gap={16}>
               <Flex gap={8} align="center">
                 <Switch defaultChecked />

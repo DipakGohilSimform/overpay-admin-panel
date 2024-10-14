@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const MessageSidebar = styled.div`
-  height: calc(100vh - 150px);
+  height: calc(100vh - 112px);
   overflow-y: auto;
   .sidebar-header {
     position: sticky;

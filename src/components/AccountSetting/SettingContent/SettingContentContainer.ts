@@ -1,11 +1,11 @@
-import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const SettingContentContainer = styled.div`
   flex: 1 1 auto;
-  height: calc(100vh - 150px);
+  height: calc(100vh - 112px);
   overflow-y: auto;
-  padding: 40px 0 40px 40px;
+  padding: 40px;
   .setting-content {
     .setting-title {
       font-size: 24px;
@@ -32,6 +32,6 @@ export const SettingContentContainer = styled.div`
     height: unset;
     border: none;
     padding: 40px;
-    margin-inline: -40px;
+    padding-block: 0;
   }
 `

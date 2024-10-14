@@ -1,8 +1,8 @@
-import { breakpointsDown } from '@/config/variables'
 import styled from 'styled-components'
+import { breakpointsDown } from '@/config/variables'
 
 export const SettingSidebarContainer = styled.div`
-  height: calc(100vh - 150px);
+  height: calc(100vh - 112px);
   overflow-y: auto;
   border-right: 1px solid var(--neutral-300);
   padding-block: 40px;
@@ -27,6 +27,6 @@ export const SettingSidebarContainer = styled.div`
     height: unset;
     border: none;
     padding-bottom: 0;
-    margin-inline: -40px;
+    padding-block: 0;
   }
 `
